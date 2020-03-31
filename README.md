@@ -4,9 +4,9 @@
 
 ## Final Proejct Proposal
 ### Our website
-https://mwfj.github.io/Final_Project_in_3D_Game/
+[](https://mwfj.github.io/Final_Project_in_3D_Game/)
 
-For our lastest update, see this link: https://mwfj.github.io/Final_Project_in_3D_Game/update
+For our lastest update, see this link: [](https://mwfj.github.io/Final_Project_in_3D_Game/update)
 
 ### What kind of game?
 
