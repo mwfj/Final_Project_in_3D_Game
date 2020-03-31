@@ -30,7 +30,7 @@ We don't want players farm creeps a lot and make the game mechanism have no chal
 
 ### Scripts and assets
 
-Since I (Zhongyue Ren) have implemented the base of random dungeon generation algorithm in maze game, we will focus on the scene build scripts. It will related to the game system, different kind of room, different kind of creeps and bosses. And the specific movement of creeps and bosses, we will develop it together, each person responsible for some creeps and bosses I think, and also responsible for the animation of the corresponding objects.  
+Since I (Zhongyue Ren) have implemented the base of random dungeon generation algorithm in maze game, we will focus on the scene build scripts. It will related to the game system, different kind of room, different kind of creeps and bosses. And the specific movement of creeps and bosses, we will develop it together, each person responsible for some creeps and bosses I think, and also responsible for the animation of the corresponding objects.  **We have not decided to use any third-party assert now**. Once decide to use it, we will update the information on our website
 
 ### Plan
 
