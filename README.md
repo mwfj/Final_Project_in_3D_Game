@@ -12,10 +12,12 @@ For our lastest update, see this link: [update](https://mwfj.github.io/Final_Pro
 
 We would like to develop a 3d roguelike game. Players will take adventure in a randomly generated dungeon. The dungeon will have different rooms with different mechanism to unlock the next level. Different creeps which will drop random item, skills and equipment. It will much like a combination of *The Binding of Isaac* and *Risk of Rain 2*. The action mode in the risk of rain will provide stronger hitting feelings. The random room skill and boss generation is the key feature in roguelike game. 
 
-![iss_img](https://img1.gamersky.com/image2019/05/20190512_byd_red_412_8/gamersky_01small_02_201951210321DF.jpg)
+![isaac_img](img/Isaac.jpg)
 
 > Screenshot of *The Binding of Isaac* from zhaodanji.com
-![Risk_the_Rain_2](https://img1.gamersky.com/image2019/04/20190411_my_227_7/1.jpg)
+
+![Risk_the_Rain_2](img/risk_of_the_rain.jpg)
+
 > Screenshot of *Risk of Rain 2* from gamesky.com
 
 ### The Control and UI
