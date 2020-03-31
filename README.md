@@ -39,4 +39,3 @@ Since I (Zhongyue Ren) have implemented the base of random dungeon generation al
 
 We have online meetings every two-three days to confirm the progress through Zoom. 
 
-## Update
