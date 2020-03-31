@@ -15,9 +15,8 @@ We would like to develop a 3d roguelike game. Players will take adventure in a r
 ![iss_img](https://img1.gamersky.com/image2019/05/20190512_byd_red_412_8/gamersky_01small_02_201951210321DF.jpg)
 
 > Screenshot of *The Binding of Isaac* from zhaodanji.com
-
+![Risk_the_Rain_2](https://img1.gamersky.com/image2019/04/20190411_my_227_7/1.jpg)
 > Screenshot of *Risk of Rain 2* from gamesky.com
-Note that: this picture source comes from [www.gamesky.com](www.gamesky.com)
 
 ### The Control and UI
 
