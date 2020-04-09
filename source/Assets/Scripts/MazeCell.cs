@@ -22,6 +22,16 @@ public class MazeCell : MonoBehaviour
             return initializedEdgeCount == 4;
         }
     }
+    public void DeleteEdge(MazeDirection direction)
+    {
+        MazeCellEdge target = edges[(int)direction];
+        if (target)
+        {
+            // edge exist
+            Destroy(target.gameObject);
+            edges[(int)direction] = null;
+        }
+    }
 
     public void SetEdge(MazeDirection direction, MazeCellEdge edge)
     {

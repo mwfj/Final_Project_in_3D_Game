@@ -49,8 +49,9 @@ public class GameManager : MonoBehaviour
         text.text = switchCount + "/ 3 switches remain";
         if (switchCount == 3)
         {
-            text.text = "Finish!\n Press Space to restart!";
-            text.fontSize = 60;
+            mazeInstance.OpenDoor();
+            text.text = "The door to the boss room open";
+            text.fontSize = 40;
             //text.transform.position = Vector3.zero;
             
         }

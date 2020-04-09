@@ -26,6 +26,7 @@ public class Switch : MonoBehaviour
         {
             this.GetComponent<Renderer>().material.color = Color.green;
             game.switchCount++;
+            Debug.Log(game.switchCount);
         }
         else
         {

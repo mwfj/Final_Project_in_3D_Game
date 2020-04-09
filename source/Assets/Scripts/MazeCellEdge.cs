@@ -9,6 +9,7 @@ public abstract class MazeCellEdge : MonoBehaviour
      */
     public MazeCell source, sink;
     public Cordinate direction;
+    public abstract string GetEdgeType();
     public void Initialize(MazeCell source, MazeCell sink, MazeDirection direction)
     {
         this.source = source;

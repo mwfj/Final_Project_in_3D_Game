@@ -44,7 +44,7 @@ public class Maze : MonoBehaviour
 
         // build up the maze with the maze cell
         WaitForSeconds delay = new WaitForSeconds(generationStepDelay);
-        cells = new MazeCell[sizeX, sizeZ];
+        cells = new MazeCell[2*sizeX, 2*sizeZ];
         /**
          * Using a list to record the active cells
          * every active cell can expand to one random direction
@@ -58,6 +58,7 @@ public class Maze : MonoBehaviour
             DoNextGenerationStep(activeCells);
         }
         CreateSwitch(3);
+        CreateRoom();
     }
     private void DoFirstGenerationStep(List<MazeCell> activeCells) // add the first cell
     {
@@ -145,6 +146,70 @@ public class Maze : MonoBehaviour
             MazeCell cell = GetCell(RandomCordinate);
             m_switch.Initialize(cell);
         }
+    }
+    public void CreateRoom()
+    {
+        /** Create room inside the maze
+         for (int i = 3; i < 7; i++)
+         {
+             for(int j = 3; j < 7; j++)
+             {
+                 //select the middle area to generate boos room, will have more settings to change size and location and number of rooms in next patch.
+                 Cordinate cor = new Cordinate(i, j);
+                 MazeCell curr = GetCell(cor); // Get maze cell by i,j
+                 if (i > 3 && j > 3 && i < 6 && j < 6)
+                 {
+                     // all the mazecell inside the room, we should delete the edge to the neibour
+                     for (int k = 0; k < 4; k++)
+                     {
+                         MazeCellEdge edge = curr.GetEdge((MazeDirection)k);
+                         Debug.Log(i + "," + j + "," + k + "," + edge.GetEdgeType() + "\n");
+                         string edgeType = edge.GetEdgeType();
+                         if (edgeType.Equals("Wall"))
+                         {
+                             Debug.Log("deleting"+i+","+j);
+                             curr.DeleteEdge((MazeDirection)k);
+                         }
+                     }
+                 }
+             }
+         }*/
+
+
+
+        // Create a boss room outside the maze .
+        Cordinate cor;
+        MazeCell cell;
+        
+        for(int i = 0; i < sizeZ; i++)
+        {
+            for(int j = 0; j < sizeX; j++)
+            {
+                cor = new Cordinate(sizeZ+i, j);
+                CreateCell(cor);
+            }
+        }
+        for (int i = 0; i < sizeZ; i++)
+        {
+            cor = new Cordinate(sizeZ + i, 0);
+            cell = GetCell(cor);
+            CreateWall(cell,null,MazeDirection.South);
+            cor = new Cordinate(sizeZ + i, sizeX-1);
+            cell = GetCell(cor);
+            CreateWall(cell, null, MazeDirection.North);
+        }
+        for (int i = 0; i < sizeX; i++)
+        {
+            cor = new Cordinate(2*sizeZ-1, i);
+            cell = GetCell(cor);
+            CreateWall(cell, null, MazeDirection.East);
+        }
+    }
+    public void OpenDoor()
+    {
+        Cordinate cor = new Cordinate(9, 5);
+        MazeCell cell = GetCell(cor);
+        cell.DeleteEdge(MazeDirection.East);
     }
 
     
