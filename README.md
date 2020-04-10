@@ -2,13 +2,12 @@
 ### Team Name: Refulgence
 ### Team Member: Zhongyue Ren, Wufangjie Ma
 
-## [Final Proejct Proposal](https://mwfj.github.io/Final_Project_in_3D_Game/Final_Project_Proposal.pdf)
 ### Our website
 [website](https://mwfj.github.io/Final_Project_in_3D_Game/ "website")
 
 For our lastest update, see this link: [update](https://mwfj.github.io/Final_Project_in_3D_Game/update "update")
 
-**Our first playable versioin:** 
+## Our first playable versioin:
 [Game_Instruction](https://mwfj.github.io/Final_Project_in_3D_Game/First_Playable_version/README.md)<br>
 [First Playable version](https://mwfj.github.io/Final_Project_in_3D_Game/First_Playable_version/index.html)
 
@@ -16,6 +15,8 @@ For our lastest update, see this link: [update](https://mwfj.github.io/Final_Pro
 ![screen_shot_fpv](readme_img/fpv_screenshot.png)
 
 **More functional update please see the update page**
+
+## [Final Proejct Proposal](https://mwfj.github.io/Final_Project_in_3D_Game/Final_Project_Proposal.pdf)
 
 ### What kind of game?
 
