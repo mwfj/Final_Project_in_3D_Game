@@ -14,3 +14,5 @@ In 04/09 updates we add a random maze and a boss room.  But currently no boss in
 * Override GetEdgeType() in class MazeWall and MazePassage.
 * Add code to generate boss room. 
 * Add conditions to open the door. 
+* Now left click mouse will change the player camera angle from buttom to top for the future use, and click it again to resume the default camera angle
+* Now scroll the mouse wheel will change the field of view for camera
