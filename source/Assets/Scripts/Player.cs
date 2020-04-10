@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
         Spawn();
         SetCamera();
         m_ch = this.GetComponent<CharacterController>();
-        
+        isLookUp = true;
     }
 
     // Update is called once per frame
