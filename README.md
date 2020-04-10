@@ -12,6 +12,7 @@ For our lastest update, see this link: [update](https://mwfj.github.io/Final_Pro
 [Game_Instruction](https://mwfj.github.io/Final_Project_in_3D_Game/First_Playable_version/README.md)<br>
 [First Playable version](https://mwfj.github.io/Final_Project_in_3D_Game/First_Playable_version/index.html)
 
+![screen_shot_fpv](readme_img/fpv_screenshot.png)
 
 ### What kind of game?
 
