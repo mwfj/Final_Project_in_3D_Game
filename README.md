@@ -9,7 +9,7 @@
 For our lastest update, see this link: [update](https://mwfj.github.io/Final_Project_in_3D_Game/update "update")
 
 **Our first playable versioin:** 
-[Game_Instruction](https://mwfj.github.io/Final_Project_in_3D_Game/First_Playable_version)<br>
+[Game_Instruction](https://mwfj.github.io/Final_Project_in_3D_Game/First_Playable_version/README.md)<br>
 [First Playable version](https://mwfj.github.io/Final_Project_in_3D_Game/First_Playable_version/index.html)
 ### What kind of game?
 
