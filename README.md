@@ -2,7 +2,7 @@
 ### Team Name: Refulgence
 ### Team Member: Zhongyue Ren, Wufangjie Ma
 
-## Final Proejct Proposal
+## [Final Proejct Proposal](https://mwfj.github.io/Final_Project_in_3D_Game/Final_Project_Proposal.pdf)
 ### Our website
 [website](https://mwfj.github.io/Final_Project_in_3D_Game/ "website")
 
@@ -11,6 +11,8 @@ For our lastest update, see this link: [update](https://mwfj.github.io/Final_Pro
 **Our first playable versioin:** 
 [Game_Instruction](https://mwfj.github.io/Final_Project_in_3D_Game/First_Playable_version/README.md)<br>
 [First Playable version](https://mwfj.github.io/Final_Project_in_3D_Game/First_Playable_version/index.html)
+
+
 ### What kind of game?
 
 We would like to develop a 3d roguelike game. Players will take adventure in a randomly generated dungeon. The dungeon will have different rooms with different mechanism to unlock the next level. Different creeps which will drop random item, skills and equipment. It will much like a combination of *The Binding of Isaac* and *Risk of Rain 2*. The action mode in the risk of rain will provide stronger hitting feelings. The random room skill and boss generation is the key feature in roguelike game. 
