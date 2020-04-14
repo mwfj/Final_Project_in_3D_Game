@@ -24,3 +24,5 @@ In 04/09 updates we add a random maze and a boss room.  But currently no boss in
 ![add_wall_layer](pic/add_wall_layer.png)
 +  Set collision layer in Player.cs to "wall" in Unity Engine<br>
  ![set_collision_layer](pic/set_collision_layer.png)
++ Change scene name to "Main"
++ Add Character Buff Utility
