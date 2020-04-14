@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
         SetCamera();
         m_ch = this.GetComponent<CharacterController>();
         normal_distance = Vector3.Distance(this.transform.position, playerCam.transform.position);
-        isLookUp = true;
+        isLookUp = false;
         isHit = false;
         mCharacterState = new CharacterState(this);
     }
