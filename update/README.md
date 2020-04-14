@@ -16,3 +16,11 @@ In 04/09 updates we add a random maze and a boss room.  But currently no boss in
 * Add conditions to open the door. 
 * Now left click mouse will change the player camera angle from buttom to top for the future use, and click it again to resume the default camera angle
 * Now scroll the mouse wheel will change the field of view for camera
+
+(04/14/2020) Add Camera Collision detection, now camera won't across the Wall
+
++ I change RayCast to LineCast for detecting the camera collision
++  change the layer of wall from "default" to "Wall"<br>
+![add_wall_layer](pic/add_wall_layer.png)
++  Set collision layer in Player.cs to "wall" in Unity Engine<br>
+ ![set_collision_layer](pic/set_collision_layer.png)
