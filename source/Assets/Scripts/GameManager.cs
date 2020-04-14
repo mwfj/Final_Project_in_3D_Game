@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     public int size=10;
     public Text text;
     public Text guide;
+    public DeathCount deathCountPrefab;
+    private DeathCount deathCountInstance;
 
     // Start is called before the first frame update
     void Start()
@@ -65,6 +67,7 @@ public class GameManager : MonoBehaviour
         mazeInstance.sizeZ = size;
         StartCoroutine(mazeInstance.Generate());
         playerInstance = Instantiate(playerPrefab) as Player;
+        
     }
     private void RestartGame()
     {

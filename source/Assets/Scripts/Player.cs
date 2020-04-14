@@ -31,6 +31,9 @@ public class Player : MonoBehaviour
     bool isHit;
     // Sign the layer for collision, where collision layer is Wall in this game.
     public LayerMask collisionLayer;
+    public CharacterState mCharacterState;
+    
+
     void Start()
     {
         Spawn();
@@ -39,6 +42,7 @@ public class Player : MonoBehaviour
         normal_distance = Vector3.Distance(this.transform.position, playerCam.transform.position);
         isLookUp = true;
         isHit = false;
+        mCharacterState = new CharacterState(this);
     }
 
     // Update is called once per frame
