@@ -62,7 +62,7 @@ In 04/09 updates we add a random maze and a boss room.  But currently no boss in
 > ![trash_configuration](pic/trash_configuration.png)
 
 + The pic below is the prefab  and script update
-+ **Note that:** the class of "**EmeryBase"** is the abstract class, where all trashes and bosses must inherit this class. **BakeNavMesh** mainly response for building mesh; The logic of "Nav Agent" you can find in the class of **"Trash"**
++ **Note that:** the class of  **"EmeryBase"**  is the abstract class, where all trashes and bosses must inherit this class. **BakeNavMesh** mainly response for building mesh; The logic of "Nav Agent" you can find in the class of **"Trash"**
 
 > ![2020-4-23_update_prefab](pic/2020-4-23_update_prefab.png)
 > ![2020-4-23_update_scripts](pic/2020-4-23_update_scripts.png)
