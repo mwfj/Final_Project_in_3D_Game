@@ -65,3 +65,4 @@ In 04/09 updates we add a random maze and a boss room.  But currently no boss in
 
 > ![2020-4-23_update_prefab](pic/2020-4-23_update_prefab.png)
 > ![2020-4-23_update_scripts](pic/2020-4-23_update_scripts.png)
+7b2858e57060046529a760bc10f5df6b4932877e
