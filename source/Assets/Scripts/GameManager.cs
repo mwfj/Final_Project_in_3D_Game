@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            RestartGame();
+            //RestartGame();
         }
         if (Input.GetKeyDown(KeyCode.PageUp))
         {
@@ -76,8 +76,9 @@ public class GameManager : MonoBehaviour
         mazeInstance = Instantiate(mazePrefab) as Maze;
         mazeInstance.sizeX = size;
         mazeInstance.sizeZ = size;
-        StartCoroutine(mazeInstance.Generate());
+        mazeInstance.Generate();
         playerInstance = Instantiate(playerPrefab) as Player;
+        playerInstance.gameObject.name = "unitychan(Clone)";
 
     }
     private void RestartGame()

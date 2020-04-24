@@ -20,9 +20,23 @@ In 04/09 updates we add a random maze and a boss room.  But currently no boss in
 (04/14/2020) Add Camera Collision detection, now camera won't across the Wall
 
 + modify the code in Player.cs, where I change RayCast to LineCast for detecting the camera collision
+
 + change the layer of wall from "default" to "Wall"<br>
-![add_wall_layer](pic/add_wall_layer.png)
+  ![add_wall_layer](pic/add_wall_layer.png)
+
 +  Set collision layer in Player.cs to "wall" in Unity Engine<br>
  ![set_collision_layer](pic/set_collision_layer.png)
+ 
 + Change scene name to "Main"
+
 + Add Character Buff Utility
+
++ Add Unity-Chan Weapon Master assets package. Implementing jump function. 
+
+    [Greatsword - Weapon Master Unity-Chan](https://assetstore.unity.com/packages/3d/animations/greatsword-weapon-master-unity-chan-103953)
+
++ Add new texture from Cartoon texture pack.
+
+    [FREE Stylized PBR Textures Pack](https://assetstore.unity.com/packages/2d/textures-materials/free-stylized-pbr-textures-pack-111778)
+
+![image-20200424040755928](pic/new_texture_preview.png)

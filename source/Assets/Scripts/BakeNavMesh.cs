@@ -17,6 +17,10 @@ public class BakeNavMesh : MonoBehaviour
     // Call this function when initializing the NavMeshBaker prefab
     public void Initialize()
     {
+
+    }
+    private void OnEnable()
+    {
         // surface = new GameObject().AddComponent<NavMeshSurface>();
         surface = GetComponent<NavMeshSurface>();
         // Debug.LogWarning("+++++++++++++++++++++++++++++++++++++++");

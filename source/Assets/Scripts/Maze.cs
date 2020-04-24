@@ -49,10 +49,10 @@ public class Maze : MonoBehaviour
     {
         return cells[cordinate.x, cordinate.z];
     }
-    public IEnumerator Generate()
+    public void Generate()
     {
         // build up the maze with the maze cell
-        WaitForSeconds delay = new WaitForSeconds(generationStepDelay);
+        
         cells = new MazeCell[2*sizeX, 2*sizeZ];
         /**
          * Using a list to record the active cells
@@ -63,7 +63,6 @@ public class Maze : MonoBehaviour
         DoFirstGenerationStep(activeCells);
         while (activeCells.Count > 0)
         {
-            yield return delay;
             DoNextGenerationStep(activeCells);
         }
         CreateRoom();
