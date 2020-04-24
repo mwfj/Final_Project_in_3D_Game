@@ -7,16 +7,17 @@
 
 For our lastest update, see this link: [update](https://mwfj.github.io/Final_Project_in_3D_Game/update "update")
 
-## Our first playable versioin:
+## Our Second playable versioin:
 [Game_Instruction](https://mwfj.github.io/Final_Project_in_3D_Game/First_Playable_version/README.md)<br>
-[First Playable version](https://mwfj.github.io/Final_Project_in_3D_Game/First_Playable_version/index.html)
 
+[Second_Playable_version](https://mwfj.github.io/Final_Project_in_3D_Game/Second_Playerable_version/index.html)
 
  **Note that: Since our game map is dynamically generated, it will still take some time to generate the game map at the beginning of the game**
 
 
 > Screenshot for our First Playable Version
 ![screen_shot_fpv](readme_img/fpv_screenshot.png)
+
 
 **More functional update please see the update page**
 
