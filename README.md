@@ -7,7 +7,7 @@
 
 For our lastest update, see this link: [update](https://mwfj.github.io/Final_Project_in_3D_Game/update "update")
 
-## Our first playable versioin:
+## Our Second playable versioin:
 [Game_Instruction](https://mwfj.github.io/Final_Project_in_3D_Game/First_Playable_version/README.md)<br>
 
 [Second_Playable_version](https://mwfj.github.io/Final_Project_in_3D_Game/Second_Playerable_version/index.html)
