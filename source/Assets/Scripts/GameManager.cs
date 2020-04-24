@@ -16,7 +16,6 @@ public class GameManager : MonoBehaviour
     public DeathCount deathCountPrefab;
     private DeathCount deathCountInstance;
 
-    // Start is called before the first frame update
     void Start()
     {
         BeginGame();
@@ -58,6 +57,18 @@ public class GameManager : MonoBehaviour
             
         }
     }
+    // private void CreateTrashes(Switch sw){
+
+    //     int randSeed = Random.Range(0,3);
+    //     Trash m_trash = Instantiate(trash_type_list[ randSeed ]) as Trash;
+    //     m_trash.transform.position = sw.transform.position;
+    //     trash_instance_list.Add(m_trash);
+    // }
+    // public void DestoryTrash(){
+    //     foreach(Trash trash in trash_instance_list){
+    //         Destroy(trash.gameObject);
+    //     }
+    // }
     private void BeginGame()
     {
         // create maze instance from prefab
@@ -67,13 +78,18 @@ public class GameManager : MonoBehaviour
         mazeInstance.sizeZ = size;
         StartCoroutine(mazeInstance.Generate());
         playerInstance = Instantiate(playerPrefab) as Player;
-        
+
     }
     private void RestartGame()
     {
         StopAllCoroutines();
-        Destroy(mazeInstance.gameObject);
+        // Destory mobs and navmesh
         Destroy(playerInstance.gameObject);
+        if(mazeInstance){
+            mazeInstance.DestoryTrash();
+            mazeInstance.DestoryNavMesh();
+        }
+        Destroy(mazeInstance.gameObject);
         BeginGame();
     }
 }

@@ -9,6 +9,8 @@ public class Switch : MonoBehaviour
     public GameManager game;
     public Player unitychan;
     public Text text;
+
+
     public void Start()
     {
         game = GameObject.Find("GameManager").GetComponent<GameManager>();
@@ -20,17 +22,35 @@ public class Switch : MonoBehaviour
         transform.parent = cell.transform;
         transform.localPosition = Vector3.zero;
     }
-    private void OnMouseDown()
+    /// <summary>
+    /// Update is called every frame, if the MonoBehaviour is enabled.
+    /// </summary>
+    void Update()
     {
-        if (Vector3.Distance(this.transform.position, unitychan.transform.position) < 0.5)
+        // Press F to open the switch
+        if (Input.GetKeyDown(KeyCode.F))
         {
-            this.GetComponent<Renderer>().material.color = Color.green;
-            game.switchCount++;
-            Debug.Log(game.switchCount);
-        }
-        else
-        {
-            text.text = "\n Too far from the object";
+            if (Vector3.Distance(this.transform.position, unitychan.transform.position) < 0.5)
+            {
+                this.GetComponent<Renderer>().material.color = Color.green;
+                game.switchCount++;
+            }
+            else
+            {
+                text.text = "\n Too far from the object";
+            }
         }
     }
+    // private void OnMouseDown()
+    // {
+    //     if (Vector3.Distance(this.transform.position, unitychan.transform.position) < 0.5)
+    //     {
+    //         this.GetComponent<Renderer>().material.color = Color.green;
+    //         game.switchCount++;
+    //     }
+    //     else
+    //     {
+    //         text.text = "\n Too far from the object";
+    //     }
+    // }
 }

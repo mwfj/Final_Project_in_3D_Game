@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CharacterState :MonoBehaviour
 {
-    
     // This is a class to define the enhancement and enfeeblement state of charater. 
     // Their transite functions
     // Basic states

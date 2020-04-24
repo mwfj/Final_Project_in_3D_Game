@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class MazeCell : MonoBehaviour
 {
     //This class is used to discripe the maze unit.\

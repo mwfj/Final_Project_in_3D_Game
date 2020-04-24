@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Maze : MonoBehaviour
 {
@@ -11,8 +12,17 @@ public class Maze : MonoBehaviour
     public float generationStepDelay;
     public MazeWall wallPrefab;
     public Switch switchPrefab;
-
+    public BakeNavMesh bakeNavMesh;
+    BakeNavMesh bake;
     private MazeCell[,] cells;
+
+    // A List to store different types of trashes.
+    public List<Trash> trash_type_list;
+    // Record all the trash instances
+    public List<Trash> trash_instance_list;
+
+    private List<Switch> switch_pos_list = new List<Switch>();
+    public NavMeshSurface surface;
     public Cordinate RandomCordinate 
     {
         // generate random cordinate to set the maze cell
@@ -41,7 +51,6 @@ public class Maze : MonoBehaviour
     }
     public IEnumerator Generate()
     {
-
         // build up the maze with the maze cell
         WaitForSeconds delay = new WaitForSeconds(generationStepDelay);
         cells = new MazeCell[2*sizeX, 2*sizeZ];
@@ -57,8 +66,52 @@ public class Maze : MonoBehaviour
             yield return delay;
             DoNextGenerationStep(activeCells);
         }
-        CreateSwitch(3);
         CreateRoom();
+        CreateSwitch(3);
+        // Debug.LogWarning("Capacity:"+trash_instance_list.Capacity);
+        //Create Bake instance
+        bake = Instantiate(bakeNavMesh) as BakeNavMesh;
+        bake.Initialize();
+        // The position of Trash/Mob is based on the position of switch
+        foreach(Switch sw in switch_pos_list){
+            CreateTrashes(sw);
+        }
+    }
+    // Get all switch instance for get its position
+    public List<Switch> getSwitchInstance(){
+        foreach(Switch pos in switch_pos_list){
+            Debug.LogWarning("get:"+pos);
+        }
+        return switch_pos_list;
+    }
+    private void CreateTrashes(Switch m_switch){
+
+        int randSeed = Random.Range(0,3);
+        Trash m_trash = Instantiate(trash_type_list[ randSeed ]) as Trash;
+        m_trash.transform.position = m_switch.transform.position;
+        // Create mobs/trashes near the switch
+        // Vector3 sw_pos = m_switch.transform.position;
+        // if(sw_pos.x>-sizeX || sw_pos.x<sizeX){
+
+        //     m_trash.transform.position = sw_pos+new Vector3(1,0,0);
+        // }else if(sw_pos.z>-sizeZ || sw_pos.z<sizeZ){
+        //     m_trash.transform.position = sw_pos+new Vector3(0,0,1);
+        // }else{
+        //     m_trash.transform.position = sw_pos;
+        // }
+        trash_instance_list.Add(m_trash);
+    }
+
+
+    public void DestoryTrash(){
+        foreach(Trash trash in trash_instance_list){
+            Destroy(trash.gameObject);
+        }
+        
+    }
+    public void DestoryNavMesh(){
+        if(bake)
+            Destroy(bake.gameObject);
     }
     private void DoFirstGenerationStep(List<MazeCell> activeCells) // add the first cell
     {
@@ -135,6 +188,8 @@ public class Maze : MonoBehaviour
         newCell.transform.parent = transform;
         // transform x,z into actual value.
         newCell.transform.localPosition = new Vector3(cordinate.x - sizeX * 0.5f + 0.5f, 0f, cordinate.z - sizeZ * 0.5f + 0.5f);
+        // BakerNavMesh baker = new BakerNavMesh();
+        // baker.GenerateNavMeshSurface();
         return newCell;
     }
 
@@ -145,6 +200,8 @@ public class Maze : MonoBehaviour
             Switch m_switch = Instantiate(switchPrefab) as Switch;
             MazeCell cell = GetCell(RandomCordinate);
             m_switch.Initialize(cell);
+            switch_pos_list.Add(m_switch);
+            // CreateTrashes(m_switch);
         }
     }
     public void CreateRoom()
@@ -211,9 +268,4 @@ public class Maze : MonoBehaviour
         MazeCell cell = GetCell(cor);
         cell.DeleteEdge(MazeDirection.East);
     }
-
-    
-
-
-
 }

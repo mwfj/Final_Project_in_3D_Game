@@ -3,15 +3,7 @@ guid: af5543e693931d94187524e306eb31df
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - mazePrefab: {fileID: 5422840731315949325, guid: 5ac5382bb8981e94284ef23588f10118,
-      type: 3}
-  - playerPrefab: {fileID: 114635649941723990, guid: 96555cccffd7e5a4b8167221ccf3740f,
-      type: 3}
-  - text: {instanceID: 0}
-  - guide: {instanceID: 0}
-  - deathCountPrefab: {fileID: 114260430049312296, guid: bbfd9cb53a961f94ab0faaa9d3fa7e1a,
-      type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

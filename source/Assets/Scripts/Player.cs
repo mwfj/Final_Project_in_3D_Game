@@ -36,6 +36,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        
         Spawn();
         SetCamera();
         m_ch = this.GetComponent<CharacterController>();
@@ -110,7 +111,7 @@ public class Player : MonoBehaviour
         ScrollWheel();
         //When the user clicks the left mouse button, the camera will go from bottom to top to view the character
         //When the user clicks it again, the relative position of camera back to the default angle. 
-        if(Input.GetKeyDown(KeyCode.Mouse0)){
+        if(Input.GetKeyDown(KeyCode.LeftShift)){
             // float mouseY = Input.GetAxis("Mouse Y") * rotateSpeed* 4 * Time.deltaTime;
             // playerCam.transform.RotateAround(this.transform.position, Vector3.right, mouseY);
             if(isLookUp){
