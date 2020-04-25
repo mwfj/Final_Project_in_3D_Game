@@ -4909,6 +4909,7 @@ GameObject:
   - component: {fileID: 7940521014035157785}
   - component: {fileID: 114635649941723990}
   - component: {fileID: 143209826828395844}
+  - component: {fileID: -3857609492282298826}
   m_Layer: 0
   m_Name: unitychan
   m_TagString: Player
@@ -4942,7 +4943,7 @@ Animator:
   m_GameObject: {fileID: 7940521014042452383}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 8f0565f23a2b58541a475bd3c1393052, type: 3}
-  m_Controller: {fileID: 9100000, guid: 711e6243c5a82ac48b15ddbb9bdb0483, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -4973,6 +4974,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   mCharacterState: {fileID: 0}
+  gravity: 0.5
+  jumpSpeed: 5
+  jumpUpTime: 0.5
+  jumpBound: 0.05
 --- !u!143 &143209826828395844
 CharacterController:
   m_ObjectHideFlags: 0
@@ -4991,6 +4996,20 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.8, z: 0}
+--- !u!136 &-3857609492282298826
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940521014042452383}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7940521014042452385
 GameObject:
   m_ObjectHideFlags: 0

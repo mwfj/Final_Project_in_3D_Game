@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public DeathCount deathCountPrefab;
     private DeathCount deathCountInstance;
 
+
     void Start()
     {
         BeginGame();
@@ -30,9 +31,9 @@ public class GameManager : MonoBehaviour
         {
             Application.Quit();
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.R))
         {
-            //RestartGame();
+            // RestartGame();
         }
         if (Input.GetKeyDown(KeyCode.PageUp))
         {

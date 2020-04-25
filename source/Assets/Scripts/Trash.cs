@@ -8,8 +8,13 @@ using UnityEngine.AI;
 // Currently, this script only do one thing, which is create Navmesh Agent and follow the main character
 public class Trash : EmeryBase
 {
+
     private GameObject target;
     private NavMeshAgent agent;
+    private Animator trash_ani;
+
+    private float rotation_speed;
+    private Vector3 move_direction;
     public override void Initialize(){
         
     }
@@ -17,18 +22,23 @@ public class Trash : EmeryBase
 
     }
 
-    /// <summary>
-    /// Awake is called when the script instance is being loaded.
-    /// </summary>
-
     // Start is called before the first frame update
     void Start()
     {
         // 
         target = GameObject.FindGameObjectWithTag("Player");
-        this.GetComponent<NavMeshAgent>().destination=target.transform.position;
-        this.GetComponent<NavMeshAgent>().isStopped = false;
-  
+        agent = this.GetComponent<NavMeshAgent>();
+        agent.destination = target.transform.position;
+        agent.isStopped = false;
+        agent.updateRotation = false;
+        trash_ani = GetComponent<Animator>();
+        rotation_speed = 5.0f;
+    }
+    // Make the trash always look at the main character
+    public void RotateToTarget(){
+        move_direction = (target.transform.position - this.transform.position).normalized;
+        Quaternion lookQuanternion = Quaternion.LookRotation(new Vector3(move_direction.x,0.0f,move_direction.z));
+        transform.rotation = lookQuanternion;
     }
 
     /// <summary>
@@ -36,8 +46,19 @@ public class Trash : EmeryBase
     /// </summary>
     void Update()
     {
-        this.GetComponent<NavMeshAgent>().destination=target.transform.position;
-        this.GetComponent<NavMeshAgent>().isStopped = false;
+        float distance = Vector3.Distance(this.transform.position,target.transform.position);
+        RotateToTarget();
+        // transform.LookAt(target.transform);
+        if(distance > agent.stoppingDistance){
+            agent.destination = target.transform.position;
+            agent.isStopped = false;
+            trash_ani.SetBool("isAttacking", false);
+        }else{
+            agent.isStopped = true;
+            trash_ani.SetBool("isAttacking", true);
+        }
+        // this.GetComponent<NavMeshAgent>().destination=target.transform.position;
+        // this.GetComponent<NavMeshAgent>().isStopped = false;
     }
 
 }
