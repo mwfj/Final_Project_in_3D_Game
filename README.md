@@ -18,6 +18,9 @@ For our lastest update, see this link: [update](https://mwfj.github.io/Final_Pro
 > Screenshot for our First Playable Version
 ![screen_shot_fpv](readme_img/fpv_screenshot.png)
 
+> Screenshot for our SecondPlayable Version
+![screen_shot_spv](update/pic/new_texture_preview.png)
+
 ## Import Assert
 ### If you want to import assert, please note that the scene name we use call **"Main"**.
 ### Then if you want to make runtime agnet work, plase manually change the NavMesh Agent setting and NavMesh Bake setting in the "Navigation" Window(Figure below)
