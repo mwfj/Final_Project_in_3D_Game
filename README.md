@@ -18,10 +18,17 @@ For our lastest update, see this link: [update](https://mwfj.github.io/Final_Pro
 > Screenshot for our First Playable Version
 ![screen_shot_fpv](readme_img/fpv_screenshot.png)
 
+## Import Assert
+### If you want to import assert, please note that the scene name we use call **"Main"**.
+### Then if you want to make runtime agnet work, plase manually change the NavMesh Agent setting and NavMesh Bake setting in the "Navigation" Window(Figure below)
 
-**More functional update please see the update page**
+>![Configure_navmash_agent](update/pic/Configure_navmash_agent.png)
+>![Configure_navmesh_bake](update/pic/Configure_navmesh_bake.png)
+
+### *More functional update please see the update page*
 
 ## [Final Proejct Proposal](https://mwfj.github.io/Final_Project_in_3D_Game/Final_Project_Proposal.pdf)
+
 
 ### What kind of game?
 
