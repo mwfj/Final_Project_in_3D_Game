@@ -1,9 +1,9 @@
 # Update
-(03/31/2020) **Decide our game topic and upload the final project proposal**
+### (03/31/2020) **Decide our game topic and upload the final project proposal**
 
-(04/07/2020) **Division of labor for game development**
+### (04/07/2020) **Division of labor for game development**
 
-(04/09/2020) **Post our first playable game**
+### (04/09/2020) **Post our first playable game**
 
 In 04/09 updates we add a random maze and a boss room.  But currently no boss in it. We will put adds in the maze and boss in the room in next updates. 
 
@@ -17,7 +17,7 @@ In 04/09 updates we add a random maze and a boss room.  But currently no boss in
 * Now left click mouse will change the player camera angle from buttom to top for the future use, and click it again to resume the default camera angle
 * Now scroll the mouse wheel will change the field of view for camera
 
-(04/14/2020) **Add Camera Collision detection, now camera won't across the Wall**
+### (04/14/2020) **Add Camera Collision detection, now camera won't across the Wall**
 
 + modify the code in Player.cs, where I change RayCast to LineCast for detecting the camera collision
 
@@ -41,7 +41,7 @@ In 04/09 updates we add a random maze and a boss room.  But currently no boss in
 
 ![image-20200424040755928](pic/new_texture_preview.png)
 =======
-(04/23/2020) **Add Runtime Navmesh Baker and Agent**
+###(04/23/2020)  **Add Runtime Navmesh Baker and Agent**
 
 [Repo_of_Runtime_NavMesh](https://github.com/Unity-Technologies/NavMeshComponents)
 
@@ -65,4 +65,15 @@ In 04/09 updates we add a random maze and a boss room.  But currently no boss in
 
 > ![2020-4-23_update_prefab](pic/2020-4-23_update_prefab.png)
 > ![2020-4-23_update_scripts](pic/2020-4-23_update_scripts.png)
-7b2858e57060046529a760bc10f5df6b4932877e
+
+### (04/25/2020)  Add mobs/trashed animation
+
++ Now trash can walk to main character
++ When trash apporach to main chatacter, it will stop and trigger attack animation
++ Move the Trash's animation and all animation contoller to `Animation` folder
+
+> ![move_to_animation_folder](pic/move_trash_ani_to_animation_folder.png)
+
++ Change Trash Prefabs's setting
+
+> ![04_25-update_Trash_Prefab_Setting](pic/04_25-update_Trash_Prefab_Setting.png)
