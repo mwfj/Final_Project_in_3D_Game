@@ -31,7 +31,6 @@ public class Player : MonoBehaviour
     bool isHit;
     // Sign the layer for collision, where collision layer is Wall in this game.
     public LayerMask collisionLayer;
-    public CharacterState mCharacterState;
     public float gravity = 0.5f;
     public float jumpSpeed = 5f;
     private Vector3 moveDirection = Vector3.zero;
@@ -57,7 +56,6 @@ public class Player : MonoBehaviour
         normal_distance = Vector3.Distance(this.transform.position, playerCam.transform.position);
         isLookUp = false;
         isHit = false;
-        mCharacterState = new CharacterState(this);
 
     }
     private void OnEnable()

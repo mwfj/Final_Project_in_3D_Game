@@ -24,7 +24,6 @@ public class DeathCount :Buff
         TTL -= Time.deltaTime;
         if (TTL < 0)
         {
-            playerInstance.mCharacterState.basic = BasicState.DIE;
             Debug.Log("DeathCount");
             Destroy(this.gameObject);
         }

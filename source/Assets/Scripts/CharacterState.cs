@@ -8,38 +8,29 @@ public class CharacterState :MonoBehaviour
     // Their transite functions
     // Basic states
     private int healthPoint; // can not be changed directly
-    public Hashtable enhancements; //buff 
-    public Hashtable enfeeblements;//debuff
-    public BasicState basic;
-    public Player playerInstance;
+    private Hashtable enhancements; //buff 
+    private Hashtable enfeeblements;//debuff
+    private BasicState basic;
+    private Animator animator;
 
     public CharacterState(Player player) // constructor, initialize the basic value of character stat.
     {
         healthPoint = 100;
         basic = BasicState.ALIVE;
-        playerInstance = player;
     }
 
     public void AddEnhacement(Buff _buff)
     {
-        string buffName = _buff.buffName;
-        if (enhancements.ContainsKey(buffName)) // If buff exists, refresh the local buff
-        {
-            Buff localBuff = (Buff)enhancements[buffName];
-        }
-        enhancements.Add(buffName,_buff);
+
     }
     public void AddEnfeeblement(Buff _buff)
     {
-        string buffName = _buff.buffName;
-        if (enfeeblements.ContainsKey(buffName)) // If buff exists, refresh the local buff
-        {
-            Buff localBuff = (Buff)enfeeblements[buffName];
-        }
-        Debug.Log("ADD debuff\n");
-        enfeeblements.Add(buffName, _buff);
-        _buff.gameObject.transform.parent = this.transform;
-        _buff.playerInstance = this.playerInstance;
+
+    }
+    private void OnEnable()
+    {
+        animator = GetComponent<Animator>();
+        animator.SetBool("Alive", true);
     }
 
     public void TakeDamage(int damage)
@@ -48,6 +39,7 @@ public class CharacterState :MonoBehaviour
         if (healthPoint < damage)
         {
             basic = BasicState.DIE;
+            animator.SetBool("Alive", false);
         }
         else
         {

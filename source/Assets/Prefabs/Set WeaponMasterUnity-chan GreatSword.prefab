@@ -2535,6 +2535,7 @@ GameObject:
   - component: {fileID: -5852363234756663999}
   - component: {fileID: 6696561277002693869}
   - component: {fileID: -6260696342075550111}
+  - component: {fileID: -7762289166181026282}
   m_Layer: 8
   m_Name: Set WeaponMasterUnity-chan GreatSword
   m_TagString: Player
@@ -2605,7 +2606,6 @@ MonoBehaviour:
   collisionLayer:
     serializedVersion: 2
     m_Bits: 256
-  mCharacterState: {fileID: 0}
   gravity: 0.5
   jumpSpeed: 3.5
   jumpUpTime: 1
@@ -2657,6 +2657,18 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.8, z: 0}
+--- !u!114 &-7762289166181026282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4703515313483560206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dca493d79e2c4081bb263f06e78e788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4715043705993585102
 GameObject:
   m_ObjectHideFlags: 0
