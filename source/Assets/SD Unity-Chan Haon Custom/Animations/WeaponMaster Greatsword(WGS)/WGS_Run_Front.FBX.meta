@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: a546a95fbfe197640804215527ae51a5
 ModelImporter:
-  serializedVersion: 26
+  serializedVersion: 19300
   internalIDToNameTable:
   - first:
       1: 100000
@@ -752,7 +752,13 @@ ModelImporter:
     second: ImportLogs
   - first:
       74: 1827226128182048838
-    second: Take 001
+    second: WGS_Run_Left@Loop
+  - first:
+      74: -998496362607748373
+    second: WGS_Run_Right@Loop
+  - first:
+      74: 3060872287085348379
+    second: WGS_Run_Back@Loop
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -765,7 +771,7 @@ ModelImporter:
       name: weapon metal
     second: {fileID: 2100000, guid: 7ac9d3e06a6875041ad42a66c67c85ee, type: 2}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 0
@@ -779,8 +785,8 @@ ModelImporter:
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
-      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
-      improve retargeting quality.\n\t'Spine' has translation animation that will
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine' has translation animation that will
       be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
@@ -1075,6 +1081,849 @@ ModelImporter:
       maskType: 1
       maskSource: {fileID: 101100000, guid: 457fa94621a1e6f469ad75beb836d5fd, type: 2}
       additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: WGS_Run_Left@Loop
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 29
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 90
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: info
+        weight: 0
+      - path: Mesh
+        weight: 0
+      - path: Mesh/Accessory_00
+        weight: 0
+      - path: Mesh/Costume_01
+        weight: 0
+      - path: Mesh/Costume_01_Skin
+        weight: 0
+      - path: Mesh/Eye_00
+        weight: 0
+      - path: Mesh/Hair_00
+        weight: 0
+      - path: Mesh/Manteau_00
+        weight: 0
+      - path: Root
+        weight: 1
+      - path: Root/center
+        weight: 1
+      - path: Root/center/Hips
+        weight: 1
+      - path: Root/center/Hips/Spine
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Accessory_SpineRibbon_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Elbow_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Index_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Index_Proximal/Finger_L_Index_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Index_Proximal/Finger_L_Index_Intermediate/Finger_L_Index_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Middle_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Middle_Proximal/Finger_L_Middle_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Middle_Proximal/Finger_L_Middle_Intermediate/Finger_L_Middle_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Pinky_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Pinky_Proximal/Finger_L_Pinky_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Pinky_Proximal/Finger_L_Pinky_Intermediate/Finger_L_Pinky_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Ring_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Ring_Proximal/Finger_L_Ring_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Ring_Proximal/Finger_L_Ring_Intermediate/Finger_L_Ring_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Thumb_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Thumb_Proximal/Finger_L_Thumb_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Thumb_Proximal/Finger_L_Thumb_Intermediate/Finger_L_Thumb_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Prop_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Lower_Arm_L_twist_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Sleeve_Bell_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Sleeve_Bell_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Sleeve_Bell_L_02
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Sleeve_Bell_L_03
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Upper_Arm_L_twist_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Elbow_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Index_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Index_Proximal/Finger_R_Index_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Index_Proximal/Finger_R_Index_Intermediate/Finger_R_Index_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Middle_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Middle_Proximal/Finger_R_Middle_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Middle_Proximal/Finger_R_Middle_Intermediate/Finger_R_Middle_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Pinky_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Pinky_Proximal/Finger_R_Pinky_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Pinky_Proximal/Finger_R_Pinky_Intermediate/Finger_R_Pinky_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Ring_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Ring_Proximal/Finger_R_Ring_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Ring_Proximal/Finger_R_Ring_Intermediate/Finger_R_Ring_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Thumb_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Thumb_Proximal/Finger_R_Thumb_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Thumb_Proximal/Finger_R_Thumb_Intermediate/Finger_R_Thumb_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Prop_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Lower_Arm_R_twist_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Sleeve_Bell_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Sleeve_Bell_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Sleeve_Bell_R_02
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Sleeve_Bell_R_03
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Upper_Arm_R_twist_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Manteau_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Manteau_L_00/Manteau_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Manteau_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Manteau_R_00/Manteau_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Eye_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Eye_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Face_BlendShapes
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_DownTwinTail_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_DownTwinTail_L_00/Hair_DownTwinTail_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_DownTwinTail_L_00/Hair_DownTwinTail_L_01/Hair_DownTwinTail_L_02
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_DownTwinTail_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_DownTwinTail_R_00/Hair_DownTwinTail_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_DownTwinTail_R_00/Hair_DownTwinTail_R_01/Hair_DownTwinTail_R_02
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Front_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Front_00/Hair_Front_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Ribbon_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Ribbon_L_00/Hair_Ribbon_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Ribbon_L_00/Hair_Ribbon_L_01/Hair_Ribbon_L_02
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Ribbon_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Ribbon_R_00/Hair_Ribbon_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Ribbon_R_00/Hair_Ribbon_R_01/Hair_Ribbon_R_02
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Side_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Side_L_00/Hair_Side_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Side_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Side_R_00/Hair_Side_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Jaw
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Back_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Back_L_00/Skirt_Back_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Back_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Back_R_00/Skirt_Back_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Center_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Center_00/Skirt_Center_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Front_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Front_L_00/Skirt_Front_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Front_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Front_R_00/Skirt_Front_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Side_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Side_L_00/Skirt_Side_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Side_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Side_R_00/Skirt_Side_R_01
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L/Lower_Leg_L
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L/Lower_Leg_L/Foot_L
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L/Lower_Leg_L/Foot_L/Toes_L
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L/Lower_Leg_L/Knee_L
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L/Lower_Leg_L/Lower_Leg_L_Twist_00
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L/Upper_Leg_L_Twist_00
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R/Lower_Leg_R
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R/Lower_Leg_R/Foot_R
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R/Lower_Leg_R/Foot_R/Toes_R
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R/Lower_Leg_R/Knee_R
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R/Lower_Leg_R/Lower_Leg_R_Twist_00
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R/Upper_Leg_R_Twist_00
+        weight: 1
+      maskType: 3
+      maskSource: {fileID: 101100000, guid: 457fa94621a1e6f469ad75beb836d5fd, type: 2}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: WGS_Run_Right@Loop
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 29
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: -90
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 1
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: info
+        weight: 0
+      - path: Mesh
+        weight: 0
+      - path: Mesh/Accessory_00
+        weight: 0
+      - path: Mesh/Costume_01
+        weight: 0
+      - path: Mesh/Costume_01_Skin
+        weight: 0
+      - path: Mesh/Eye_00
+        weight: 0
+      - path: Mesh/Hair_00
+        weight: 0
+      - path: Mesh/Manteau_00
+        weight: 0
+      - path: Root
+        weight: 1
+      - path: Root/center
+        weight: 1
+      - path: Root/center/Hips
+        weight: 1
+      - path: Root/center/Hips/Spine
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Accessory_SpineRibbon_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Elbow_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Index_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Index_Proximal/Finger_L_Index_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Index_Proximal/Finger_L_Index_Intermediate/Finger_L_Index_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Middle_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Middle_Proximal/Finger_L_Middle_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Middle_Proximal/Finger_L_Middle_Intermediate/Finger_L_Middle_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Pinky_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Pinky_Proximal/Finger_L_Pinky_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Pinky_Proximal/Finger_L_Pinky_Intermediate/Finger_L_Pinky_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Ring_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Ring_Proximal/Finger_L_Ring_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Ring_Proximal/Finger_L_Ring_Intermediate/Finger_L_Ring_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Thumb_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Thumb_Proximal/Finger_L_Thumb_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Thumb_Proximal/Finger_L_Thumb_Intermediate/Finger_L_Thumb_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Prop_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Lower_Arm_L_twist_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Sleeve_Bell_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Sleeve_Bell_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Sleeve_Bell_L_02
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Sleeve_Bell_L_03
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Upper_Arm_L_twist_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Elbow_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Index_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Index_Proximal/Finger_R_Index_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Index_Proximal/Finger_R_Index_Intermediate/Finger_R_Index_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Middle_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Middle_Proximal/Finger_R_Middle_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Middle_Proximal/Finger_R_Middle_Intermediate/Finger_R_Middle_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Pinky_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Pinky_Proximal/Finger_R_Pinky_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Pinky_Proximal/Finger_R_Pinky_Intermediate/Finger_R_Pinky_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Ring_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Ring_Proximal/Finger_R_Ring_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Ring_Proximal/Finger_R_Ring_Intermediate/Finger_R_Ring_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Thumb_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Thumb_Proximal/Finger_R_Thumb_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Thumb_Proximal/Finger_R_Thumb_Intermediate/Finger_R_Thumb_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Prop_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Lower_Arm_R_twist_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Sleeve_Bell_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Sleeve_Bell_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Sleeve_Bell_R_02
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Sleeve_Bell_R_03
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Upper_Arm_R_twist_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Manteau_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Manteau_L_00/Manteau_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Manteau_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Manteau_R_00/Manteau_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Eye_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Eye_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Face_BlendShapes
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_DownTwinTail_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_DownTwinTail_L_00/Hair_DownTwinTail_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_DownTwinTail_L_00/Hair_DownTwinTail_L_01/Hair_DownTwinTail_L_02
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_DownTwinTail_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_DownTwinTail_R_00/Hair_DownTwinTail_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_DownTwinTail_R_00/Hair_DownTwinTail_R_01/Hair_DownTwinTail_R_02
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Front_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Front_00/Hair_Front_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Ribbon_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Ribbon_L_00/Hair_Ribbon_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Ribbon_L_00/Hair_Ribbon_L_01/Hair_Ribbon_L_02
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Ribbon_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Ribbon_R_00/Hair_Ribbon_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Ribbon_R_00/Hair_Ribbon_R_01/Hair_Ribbon_R_02
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Side_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Side_L_00/Hair_Side_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Side_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Side_R_00/Hair_Side_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Jaw
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Back_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Back_L_00/Skirt_Back_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Back_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Back_R_00/Skirt_Back_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Center_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Center_00/Skirt_Center_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Front_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Front_L_00/Skirt_Front_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Front_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Front_R_00/Skirt_Front_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Side_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Side_L_00/Skirt_Side_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Side_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Side_R_00/Skirt_Side_R_01
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L/Lower_Leg_L
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L/Lower_Leg_L/Foot_L
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L/Lower_Leg_L/Foot_L/Toes_L
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L/Lower_Leg_L/Knee_L
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L/Lower_Leg_L/Lower_Leg_L_Twist_00
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L/Upper_Leg_L_Twist_00
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R/Lower_Leg_R
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R/Lower_Leg_R/Foot_R
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R/Lower_Leg_R/Foot_R/Toes_R
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R/Lower_Leg_R/Knee_R
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R/Lower_Leg_R/Lower_Leg_R_Twist_00
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R/Upper_Leg_R_Twist_00
+        weight: 1
+      maskType: 3
+      maskSource: {fileID: 101100000, guid: 457fa94621a1e6f469ad75beb836d5fd, type: 2}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: WGS_Run_Back@Loop
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 29
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 180
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 1
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: info
+        weight: 0
+      - path: Mesh
+        weight: 0
+      - path: Mesh/Accessory_00
+        weight: 0
+      - path: Mesh/Costume_01
+        weight: 0
+      - path: Mesh/Costume_01_Skin
+        weight: 0
+      - path: Mesh/Eye_00
+        weight: 0
+      - path: Mesh/Hair_00
+        weight: 0
+      - path: Mesh/Manteau_00
+        weight: 0
+      - path: Root
+        weight: 1
+      - path: Root/center
+        weight: 1
+      - path: Root/center/Hips
+        weight: 1
+      - path: Root/center/Hips/Spine
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Accessory_SpineRibbon_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Elbow_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Index_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Index_Proximal/Finger_L_Index_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Index_Proximal/Finger_L_Index_Intermediate/Finger_L_Index_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Middle_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Middle_Proximal/Finger_L_Middle_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Middle_Proximal/Finger_L_Middle_Intermediate/Finger_L_Middle_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Pinky_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Pinky_Proximal/Finger_L_Pinky_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Pinky_Proximal/Finger_L_Pinky_Intermediate/Finger_L_Pinky_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Ring_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Ring_Proximal/Finger_L_Ring_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Ring_Proximal/Finger_L_Ring_Intermediate/Finger_L_Ring_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Thumb_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Thumb_Proximal/Finger_L_Thumb_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Finger_L_Thumb_Proximal/Finger_L_Thumb_Intermediate/Finger_L_Thumb_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Hand_L/Prop_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Lower_Arm_L_twist_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Sleeve_Bell_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Sleeve_Bell_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Sleeve_Bell_L_02
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Lower_Arm_L/Sleeve_Bell_L_03
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_L/Upper_Arm_L/Upper_Arm_L_twist_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Elbow_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Index_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Index_Proximal/Finger_R_Index_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Index_Proximal/Finger_R_Index_Intermediate/Finger_R_Index_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Middle_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Middle_Proximal/Finger_R_Middle_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Middle_Proximal/Finger_R_Middle_Intermediate/Finger_R_Middle_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Pinky_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Pinky_Proximal/Finger_R_Pinky_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Pinky_Proximal/Finger_R_Pinky_Intermediate/Finger_R_Pinky_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Ring_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Ring_Proximal/Finger_R_Ring_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Ring_Proximal/Finger_R_Ring_Intermediate/Finger_R_Ring_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Thumb_Proximal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Thumb_Proximal/Finger_R_Thumb_Intermediate
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Finger_R_Thumb_Proximal/Finger_R_Thumb_Intermediate/Finger_R_Thumb_Distal
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Hand_R/Prop_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Lower_Arm_R_twist_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Sleeve_Bell_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Sleeve_Bell_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Sleeve_Bell_R_02
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Lower_Arm_R/Sleeve_Bell_R_03
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Clavicle_R/Upper_Arm_R/Upper_Arm_R_twist_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Manteau_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Manteau_L_00/Manteau_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Manteau_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Manteau_R_00/Manteau_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Eye_L
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Eye_R
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Face_BlendShapes
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_DownTwinTail_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_DownTwinTail_L_00/Hair_DownTwinTail_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_DownTwinTail_L_00/Hair_DownTwinTail_L_01/Hair_DownTwinTail_L_02
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_DownTwinTail_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_DownTwinTail_R_00/Hair_DownTwinTail_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_DownTwinTail_R_00/Hair_DownTwinTail_R_01/Hair_DownTwinTail_R_02
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Front_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Front_00/Hair_Front_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Ribbon_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Ribbon_L_00/Hair_Ribbon_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Ribbon_L_00/Hair_Ribbon_L_01/Hair_Ribbon_L_02
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Ribbon_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Ribbon_R_00/Hair_Ribbon_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Ribbon_R_00/Hair_Ribbon_R_01/Hair_Ribbon_R_02
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Side_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Side_L_00/Hair_Side_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Side_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Hair_Side_R_00/Hair_Side_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Chest/Upper_Chest/Neck/Head/Jaw
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Back_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Back_L_00/Skirt_Back_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Back_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Back_R_00/Skirt_Back_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Center_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Center_00/Skirt_Center_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Front_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Front_L_00/Skirt_Front_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Front_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Front_R_00/Skirt_Front_R_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Side_L_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Side_L_00/Skirt_Side_L_01
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Side_R_00
+        weight: 1
+      - path: Root/center/Hips/Spine/Skirt_Side_R_00/Skirt_Side_R_01
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L/Lower_Leg_L
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L/Lower_Leg_L/Foot_L
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L/Lower_Leg_L/Foot_L/Toes_L
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L/Lower_Leg_L/Knee_L
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L/Lower_Leg_L/Lower_Leg_L_Twist_00
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_L/Upper_Leg_L_Twist_00
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R/Lower_Leg_R
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R/Lower_Leg_R/Foot_R
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R/Lower_Leg_R/Foot_R/Toes_R
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R/Lower_Leg_R/Knee_R
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R/Lower_Leg_R/Lower_Leg_R_Twist_00
+        weight: 1
+      - path: Root/center/Hips/Upper_Leg_R/Upper_Leg_R_Twist_00
+        weight: 1
+      maskType: 3
+      maskSource: {fileID: 101100000, guid: 457fa94621a1e6f469ad75beb836d5fd, type: 2}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -1113,7 +1962,6 @@ ModelImporter:
     normalSmoothingSource: 0
   referencedClips: []
   importAnimation: 1
-  copyAvatar: 1
   humanDescription:
     serializedVersion: 3
     human:
@@ -2207,10 +3055,12 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: e7f9062685a4c3c44a1bbecc3992d83c,
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: b03205fcfb0771b4a93a682d594cc505,
     type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
+  avatarSetup: 2
   additionalBone: 0
   userData: 
   assetBundleName: 

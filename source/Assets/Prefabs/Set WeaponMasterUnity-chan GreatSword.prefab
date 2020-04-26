@@ -2609,6 +2609,7 @@ MonoBehaviour:
     m_Bits: 256
   gravity: 0.5
   jumpSpeed: 3.5
+  moveSpeed: 0.75
   jumpUpTime: 1
   jumpBound: 0.2
 --- !u!114 &8546390012212752075

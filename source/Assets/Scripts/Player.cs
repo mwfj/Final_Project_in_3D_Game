@@ -33,6 +33,7 @@ public class Player : MonoBehaviour
     public LayerMask collisionLayer;
     public float gravity = 0.5f;
     public float jumpSpeed = 5f;
+    public float moveSpeed = 1.0f;
     private Vector3 moveDirection = Vector3.zero;
     Animator animator;
     bool grounded = true;
@@ -103,18 +104,32 @@ public class Player : MonoBehaviour
         float sr = Mathf.Sin(cameraRoate);
         float cr = Mathf.Cos(cameraRoate);
 
-        moveDirection = new Vector3((v * sr + h * cr), 0, (v * cr - h * sr));
+        if (v != 0 || h != 0)
+        {
+            animator.SetBool("Running", true);
+            animator.SetFloat("x", h);
+            animator.SetFloat("y", v);
+        }
+        else
+        {
+            animator.SetBool("Running", false);
+        }
+        moveDirection = new Vector3((v * sr + h * cr)*moveSpeed, 0, (v * cr - h * sr)*moveSpeed);
         if (grounded)
         {
-            if (Input.GetButtonDown("Jump")&&animator.GetCurrentAnimatorStateInfo(0).IsName("Stand@loop 2 0 0"))
+            AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(0);
+            if (Input.GetButtonDown("Jump"))
             {
-                grounded = false;
-                animator.SetBool("Jump", true);
-                animator.SetBool("Grounded", false);
-                Debug.Log("set Grounded false");
-                isJumpingUp = true;
-                tempTime = Time.time;
-                moveDirection.y = jumpSpeed;
+                if (info.IsName("Stand@loop 2 0 0") || info.IsName("Running")){
+                    grounded = false;
+                    animator.SetBool("Jump", true);
+                    animator.SetBool("Running", false);
+                    animator.SetBool("Grounded", false);
+                    Debug.Log("set Grounded false");
+                    isJumpingUp = true;
+                    tempTime = Time.time;
+                    moveDirection.y = jumpSpeed;
+                }
             }
         }
         else
