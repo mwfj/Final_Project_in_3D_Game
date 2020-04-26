@@ -46,6 +46,11 @@ public class Trash : EmeryBase
     /// </summary>
     void Update()
     {
+        if(agent.hasPath){
+            trash_ani.SetBool("hasPath", true);
+        }else{
+            trash_ani.SetBool("hasPath", false);
+        }
         float distance = Vector3.Distance(this.transform.position,target.transform.position);
         RotateToTarget();
         // transform.LookAt(target.transform);
