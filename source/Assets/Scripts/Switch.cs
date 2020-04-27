@@ -9,6 +9,7 @@ public class Switch : MonoBehaviour
     public GameManager game;
     public Player unitychan;
     public Text text;
+    private bool isActivate = false;
 
 
     public void Start()
@@ -30,10 +31,11 @@ public class Switch : MonoBehaviour
         // Press F to open the switch
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if (Vector3.Distance(this.transform.position, unitychan.transform.position) < 0.5)
+            if (Vector3.Distance(this.transform.position, unitychan.transform.position) < 0.5 && (!isActivate))
             {
                 this.GetComponent<Renderer>().material.color = Color.green;
                 game.switchCount++;
+                isActivate = true;
             }
             else
             {
