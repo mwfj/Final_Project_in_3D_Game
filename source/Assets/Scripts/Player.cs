@@ -164,17 +164,22 @@ public class Player : MonoBehaviour
                 }
             }*/
         }
- 
+        Vector3 direction;
+        if (v < 0)
+        {
+            //moveDirection.x = -moveDirection.x;
+            direction = -playerCam.transform.forward;
+            direction.y = 0;
+        }
+        else
+        {
+            direction = playerCam.transform.forward;
+            direction.y = 0;
+        }
         m_ch.Move(moveDirection * Time.deltaTime);
-        Vector3 direction = playerCam.transform.forward;
-        direction.y = 0;
+ 
         this.transform.forward = direction;
  
-        
-        // if (Input.GetKeyDown(KeyCode.Space))
-        // {
-
-        // }
 
 
     }
