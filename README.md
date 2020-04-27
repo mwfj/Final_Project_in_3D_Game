@@ -21,6 +21,12 @@ For our lastest update, see this link: [update](https://mwfj.github.io/Final_Pro
 > Screenshot for our SecondPlayable Version
 ![screen_shot_spv](update/pic/new_texture_preview.png)
 
+> Fight System<br>
+![Fight_System](readme_img/Attack_system.gif)
+
+> Boss Room <br>
+![Boss_Room](readme_img/Boss_Room.gif)
+
 ## Import Assert
 ### If you want to import assert, please note that the scene name we use call **"Main"**.
 ### Then if you want to make runtime agnet work, plase manually change the NavMesh Agent setting and NavMesh Bake setting in the "Navigation" Window(Figure below)
