@@ -1,0 +1,15 @@
+GOLEM_GROUND_ROCK.tga filter=lfs diff=lfs merge=lfs -text
+GOLEM_ICE_SPEC_GLOSS.tga filter=lfs diff=lfs merge=lfs -text
+GOLEM_ROCKS_ICE_SPEC_GLOSS.tga filter=lfs diff=lfs merge=lfs -text
+GOLEM_ROCKS_ROCK_LEGACY.tga filter=lfs diff=lfs merge=lfs -text
+GOLEM_ROCK_LEGACY.tga filter=lfs diff=lfs merge=lfs -text
+GOLEM_ICE_ILLUM.tga filter=lfs diff=lfs merge=lfs -text
+GOLEM_ROCKS_ICE_LEGACY.tga filter=lfs diff=lfs merge=lfs -text
+GOLEM_ROCKS_ROCK_SPEC_GLOSS.tga filter=lfs diff=lfs merge=lfs -text
+GOLEM_ROCK_ILLUM.tga filter=lfs diff=lfs merge=lfs -text
+GOLEM_ROCK_SPEC_GLOSS.tga filter=lfs diff=lfs merge=lfs -text
+GROUND_SNOW_ALBEDO.tga filter=lfs diff=lfs merge=lfs -text
+GROUND_SNOW_SPEC_GLOSS.tga filter=lfs diff=lfs merge=lfs -text
+GOLEM_GROUND_ICE_ALBEDO.tga filter=lfs diff=lfs merge=lfs -text
+GOLEM_GROUND_ICE_SPEC_GLOSS.tga filter=lfs diff=lfs merge=lfs -text
+GOLEM_ICE_LEGACY.tga filter=lfs diff=lfs merge=lfs -text
