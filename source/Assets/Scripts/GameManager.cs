@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     private Maze mazeInstance;
     public Player playerPrefab;
     private Player playerInstance;
+    public BossRoomCollider bossRoomColliderPrefab;
+    private BossRoomCollider colliderInstance;
+    private int count = 0;
     public int switchCount;
     public int size=10;
     public Text text;
@@ -16,10 +19,15 @@ public class GameManager : MonoBehaviour
     public DeathCount deathCountPrefab;
     private DeathCount deathCountInstance;
 
+    
+    // The Collider will store in this parameter for detect whether main character is in the boss room
+    private Collider bossRoomCollider;
+    private bool isColliderCreated;
 
     void Start()
     {
         BeginGame();
+        isColliderCreated = false;
         text.color = Color.red;
         guide.text = "Use wasd to move, right button on mouse to rotate. Find three switches to escape the dungeon.";
     }
@@ -33,7 +41,7 @@ public class GameManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
-            // RestartGame();
+            RestartGame();
         }
         if (Input.GetKeyDown(KeyCode.PageUp))
         {
@@ -49,13 +57,19 @@ public class GameManager : MonoBehaviour
         }
 
         text.text = switchCount + "/ 3 switches remain";
-        if (switchCount == 3)
+        if (switchCount >= 3)
         {
             mazeInstance.OpenDoor();
             text.text = "The door to the boss room open";
             text.fontSize = 40;
             //text.transform.position = Vector3.zero;
             
+        }
+        // Boss room collider only create once, when boss room open but main character not enter the boss room
+        if(mazeInstance.GetIsDoorOpen() && isColliderCreated == false){
+            isColliderCreated = true;
+            Debug.LogWarning(isColliderCreated);
+            CreateBossRoomCollider();
         }
     }
     // private void CreateTrashes(Switch sw){
@@ -84,14 +98,29 @@ public class GameManager : MonoBehaviour
     }
     private void RestartGame()
     {
+        isColliderCreated = false;
         StopAllCoroutines();
+        if(colliderInstance){
+            Destroy(colliderInstance.gameObject);
+        }
         // Destory mobs and navmesh
         Destroy(playerInstance.gameObject);
         if(mazeInstance){
             mazeInstance.DestoryTrash();
+            mazeInstance.DestroyBoss();
             mazeInstance.DestoryNavMesh();
         }
         Destroy(mazeInstance.gameObject);
         BeginGame();
+    }
+    public void CreateBossRoomCollider(){
+        Debug.LogWarning("Create collider");
+        colliderInstance = Instantiate(bossRoomColliderPrefab) as BossRoomCollider;
+        colliderInstance.gameObject.name = "BossRoomCollider(clone)";
+        colliderInstance.transform.position = new Vector3(size/2,0.5f,0.5f);
+        colliderInstance.Initialization(size,size,mazeInstance);
+        bossRoomCollider = colliderInstance.GetComponent<BoxCollider>();
+        bossRoomCollider.isTrigger = true;
+        // isColliderCreated = true;
     }
 }

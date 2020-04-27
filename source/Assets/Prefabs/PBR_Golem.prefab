@@ -72,12 +72,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4408297863206454}
   - component: {fileID: 95380085654935804}
-  - component: {fileID: -1929855191027184277}
   - component: {fileID: 2815237922528923350}
   - component: {fileID: 6647671563684782429}
   - component: {fileID: 3105797139260352366}
   - component: {fileID: 2105299473580637842}
   - component: {fileID: 6631946770243280163}
+  - component: {fileID: -8555989701517268657}
   m_Layer: 0
   m_Name: PBR_Golem
   m_TagString: Emery
@@ -121,19 +121,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-1929855191027184277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1067925524328404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7d52b1d1d7e549179a5e2c8072d5590, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isInAttackMode: 0
 --- !u!114 &2815237922528923350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,6 +197,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-8555989701517268657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067925524328404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d52b1d1d7e549179a5e2c8072d5590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move_direction: {x: 0, y: 0, z: 0}
+  rotation_speed: 0
+  isInAttackMode: 0
 --- !u!1 &1088256926929212
 GameObject:
   m_ObjectHideFlags: 0

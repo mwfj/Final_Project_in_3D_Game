@@ -321,11 +321,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1077356410}
   - component: {fileID: 1077356409}
-  - component: {fileID: 6017725164755377780}
   - component: {fileID: 3842754039652708511}
   - component: {fileID: -2241153530808979380}
   - component: {fileID: -6262855420872629113}
   - component: {fileID: -1986378358776197941}
+  - component: {fileID: -5735944208165294444}
   m_Layer: 0
   m_Name: Polyart_Golem
   m_TagString: Emery
@@ -369,19 +369,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6017725164755377780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1077356408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7d52b1d1d7e549179a5e2c8072d5590, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isInAttackMode: 0
 --- !u!114 &3842754039652708511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,6 +433,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-5735944208165294444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077356408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d52b1d1d7e549179a5e2c8072d5590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move_direction: {x: 0, y: 0, z: 0}
+  rotation_speed: 0
+  isInAttackMode: 0
 --- !u!1 &1099011281
 GameObject:
   m_ObjectHideFlags: 0

@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e83dcf7c600304ca831233fc21ade5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game: {fileID: 4791317694849074928, guid: a39efc79231b80e4c867a6ee0a139b75, type: 3}
-  unitychan: {fileID: 114635649941723990, guid: 96555cccffd7e5a4b8167221ccf3740f,
+  game: {fileID: 0}
+  unitychan: {fileID: 8524376262388305529, guid: 3947547f42a4bc748b68430c2937b3db,
     type: 3}
   text: {fileID: 0}

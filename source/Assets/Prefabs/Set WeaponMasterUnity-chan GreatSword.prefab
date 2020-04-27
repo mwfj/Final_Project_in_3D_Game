@@ -2598,7 +2598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b66b1fe0eeb81742934b56a529f6922, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maze: {fileID: 5422840731315949325, guid: 5ac5382bb8981e94284ef23588f10118, type: 3}
+  maze: {fileID: -8382846551116827833, guid: 5ac5382bb8981e94284ef23588f10118, type: 3}
   playerCam: {fileID: 0}
   mainCam: {fileID: 0}
   minFov: 30
@@ -2609,7 +2609,7 @@ MonoBehaviour:
     m_Bits: 256
   gravity: 0.5
   jumpSpeed: 3.5
-  moveSpeed: 0.75
+  moveSpeed: 1.2
   jumpUpTime: 1
   jumpBound: 0.2
 --- !u!114 &8546390012212752075
@@ -4130,6 +4130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAttack: 0
   coolDown: 0.15
+  damage: 10
 --- !u!1 &8198137721379034868
 GameObject:
   m_ObjectHideFlags: 0

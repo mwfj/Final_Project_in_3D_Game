@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3831648973363064572}
-  - component: {fileID: 5422840731315949325}
   - component: {fileID: -7930713385410998281}
+  - component: {fileID: -8382846551116827833}
   m_Layer: 0
   m_Name: Maze
   m_TagString: Untagged
@@ -32,37 +32,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5422840731315949325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6545143891347471472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a35ee5645b8be8742acfcb86649be4b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sizeX: 10
-  sizeZ: 10
-  cellPrefab: {fileID: 114327661969187830, guid: 59b3991dc880cae46b6e90174a86b565,
-    type: 3}
-  passagePrefab: {fileID: 114473971906077092, guid: b8a6f5af1d55f8749bf34171d5854eea,
-    type: 3}
-  generationStepDelay: 0
-  wallPrefab: {fileID: 114373469191509944, guid: a19adc5b64d49714da858b06e2421bc5,
-    type: 3}
-  switchPrefab: {fileID: 114588323447190444, guid: 257b82fae864a954abac8b6a581e2e92,
-    type: 3}
-  bakeNavMesh: {fileID: 7677492173286953507, guid: abc330f4500254421a9807fd3adba9c7,
-    type: 3}
-  trash_type_list:
-  - {fileID: -4889000593123015549, guid: feb3874e0c48f4833b5e712458a00e64, type: 3}
-  - {fileID: -1929855191027184277, guid: a54411823c9f94e46ad2756786ea685b, type: 3}
-  - {fileID: 6017725164755377780, guid: 67c184e658c904638a5994f3f4b48dd4, type: 3}
-  trash_instance_list: []
-  surface: {fileID: 0}
 --- !u!114 &-7930713385410998281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,3 +61,36 @@ MonoBehaviour:
   m_VoxelSize: 0.06666667
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &-8382846551116827833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6545143891347471472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a35ee5645b8be8742acfcb86649be4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeX: 30
+  sizeZ: 30
+  cellPrefab: {fileID: 114327661969187830, guid: 59b3991dc880cae46b6e90174a86b565,
+    type: 3}
+  passagePrefab: {fileID: 114473971906077092, guid: b8a6f5af1d55f8749bf34171d5854eea,
+    type: 3}
+  generationStepDelay: 0
+  wallPrefab: {fileID: 114373469191509944, guid: 2159d3b195a6a4a09aec15e9de7b2643,
+    type: 3}
+  switchPrefab: {fileID: 114588323447190444, guid: 257b82fae864a954abac8b6a581e2e92,
+    type: 3}
+  bakeNavMesh: {fileID: 7677492173286953507, guid: abc330f4500254421a9807fd3adba9c7,
+    type: 3}
+  trash_type_list:
+  - {fileID: -4096820602966805557, guid: feb3874e0c48f4833b5e712458a00e64, type: 3}
+  - {fileID: -8555989701517268657, guid: a54411823c9f94e46ad2756786ea685b, type: 3}
+  - {fileID: -5735944208165294444, guid: 67c184e658c904638a5994f3f4b48dd4, type: 3}
+  trash_instance_list: []
+  bossPrefab: {fileID: -2253170836973482150, guid: 456ba1f08c1f94c549775769c70a92a1,
+    type: 3}
+  bossCreated: 0

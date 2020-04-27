@@ -401,9 +401,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af5543e693931d94187524e306eb31df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mazePrefab: {fileID: 5422840731315949325, guid: 5ac5382bb8981e94284ef23588f10118,
+  mazePrefab: {fileID: -8382846551116827833, guid: 5ac5382bb8981e94284ef23588f10118,
     type: 3}
   playerPrefab: {fileID: 8524376262388305529, guid: 3947547f42a4bc748b68430c2937b3db,
+    type: 3}
+  bossRoomColliderPrefab: {fileID: 8060622713987402057, guid: aa3965033a1d84e8db426416f7890c32,
     type: 3}
   switchCount: 0
   size: 10
