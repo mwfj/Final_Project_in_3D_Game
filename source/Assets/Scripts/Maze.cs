@@ -15,6 +15,7 @@ public class Maze : MonoBehaviour
     public BakeNavMesh bakeNavMesh;
     BakeNavMesh bake;
     private MazeCell[,] cells;
+    private static int trashCount=0; 
 
     // A List to store different types of trashes.
     public List<Trash> trash_type_list;
@@ -88,6 +89,8 @@ public class Maze : MonoBehaviour
         int randSeed = Random.Range(0,3);
         Trash m_trash = Instantiate(trash_type_list[ randSeed ]) as Trash;
         m_trash.transform.position = m_switch.transform.position;
+        trashCount++;
+        m_trash.gameObject.name = "trash" + trashCount;
         // Create mobs/trashes near the switch
         // Vector3 sw_pos = m_switch.transform.position;
         // if(sw_pos.x>-sizeX || sw_pos.x<sizeX){

@@ -12,13 +12,6 @@ public class CharacterState :MonoBehaviour
     private Hashtable enfeeblements;//debuff
     private BasicState basic;
     private Animator animator;
-
-    public CharacterState(Player player) // constructor, initialize the basic value of character stat.
-    {
-        healthPoint = 100;
-        basic = BasicState.ALIVE;
-    }
-
     public void AddEnhacement(Buff _buff)
     {
 
@@ -27,23 +20,38 @@ public class CharacterState :MonoBehaviour
     {
 
     }
+    private void Start()
+    {
+        healthPoint = 100;
+        basic = BasicState.ALIVE;
+        Debug.Log(transform.gameObject.name + "Health point:\t" + healthPoint);
+    }
     private void OnEnable()
     {
         animator = GetComponent<Animator>();
         animator.SetBool("Alive", true);
     }
-
-    public void TakeDamage(int damage)
+    private void Update()
     {
         // API to deal with the health point.
-        if (healthPoint < damage)
+        if (healthPoint <= 0 )
         {
             basic = BasicState.DIE;
             animator.SetBool("Alive", false);
         }
-        else
-        {
+    }
+
+    public void TakeDamage(int damage)
+    {
+
+ 
             healthPoint -= damage;
-        }
+            Debug.Log(transform.gameObject.name + "\t" + healthPoint);
+            animator.SetTrigger("GetHit");
+    }
+
+    public float getHealthRate()
+    {
+        return (float)healthPoint / 100f;
     }
 }

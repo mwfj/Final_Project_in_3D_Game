@@ -4031,6 +4031,8 @@ GameObject:
   - component: {fileID: 1065651833859435152}
   - component: {fileID: 2986014522649120424}
   - component: {fileID: 5465671404050790235}
+  - component: {fileID: 2864760583545256013}
+  - component: {fileID: 5524298833003587477}
   m_Layer: 8
   m_Name: Mesh_greatsword
   m_TagString: Untagged
@@ -4100,6 +4102,34 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2864760583545256013
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8094906911863805720}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3668237748712508287, guid: 44174fe624936d249a651b06e29730a9, type: 3}
+--- !u!114 &5524298833003587477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8094906911863805720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7dd8775295be44fbb1a44dcd39331d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAttack: 0
+  coolDown: 0.15
 --- !u!1 &8198137721379034868
 GameObject:
   m_ObjectHideFlags: 0
