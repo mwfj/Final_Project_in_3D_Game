@@ -176,7 +176,7 @@ Moreover, when boss room opened, it will have sound effect to describe it.
 When the main character kill boss, the background music will change to victory music.
 
 
-### Character sound effect
+### Character/Boss sound effect
 
 Because the time limit, I only added sound effects for the main character and boss. When player run, attack and jump, it will have sound effect. When boss roar(introduce animation) and attack, it will have sound effect. We will add sound effect for all character in the future.
 
