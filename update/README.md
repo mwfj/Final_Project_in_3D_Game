@@ -81,6 +81,9 @@ In 04/09 updates we add a random maze and a boss room.  But currently no boss in
 ## (04/26/2020)  **Add Boss Creation and animation; Add trash/boss Health bar  and Attack system**
 ### Boss Creation
 The boss creation is little complicated, when the main character turn all the switch on(3 in this game), boss room will open, and the location of door will automatically create a box collider to detect whether the main character enter the boss room or not. When the main character first enter the boss room, it will trigger this collider and boss will generate in the boss room.
+
+![health_bar](../readme_img/Boss_Room.gif)
+
 ### Health bar 
 Add world space canvas to the enemy prefab, and change the fill account by the health point of the enemy.
 
@@ -89,6 +92,7 @@ If health equals 0, play the dying animation and destroy the object after the an
 And the boss health bar will use the camera space, and is located at the top left of the screen. It will be activated when the boss is generated.
 
 If we just set the canvas as a sub object of the enemy, the health bar will rotate with the enemy. We want it always face to our camera, so we add a script to dynamically detect the rotation and make sure the health bar is perfectly displayed.
+
 
 ###  Attack
 
@@ -101,6 +105,8 @@ Add collision trigger on the weapon. Using onTriggerStay to check the attack the
 **Hit Box**<br>
 
 We should add additional box collider to check the attack. Because of the NaveMesh, some times the Weapon may not really attack on the enemy model, so a little bigger hit box should be added. This will improve the use experience.
+
+![health_bar](../readme_img/Attack_system.gif)
 
 ## (04/27/2020)  **Add background music; Add main character/boss sound effect**
 
