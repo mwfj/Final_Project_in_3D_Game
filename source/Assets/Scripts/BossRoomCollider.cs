@@ -10,6 +10,11 @@ public class BossRoomCollider : MonoBehaviour
     public BackgroundMusicController musicController;
     private BossHealthBar bossHealthBar;
     private GameManager gameManager;
+    private AudioSource openDooreffect;
+    public AudioClip openTheDoorClip;
+    private GameObject bossInstance;
+    private Animator boss_ani;
+    private bool isBossDead;
 
 
 
@@ -18,6 +23,9 @@ public class BossRoomCollider : MonoBehaviour
         sizeX = x_axis;
         mazeInstance = maze;
         musicController = _musicController;
+        openDooreffect = this.GetComponent<AudioSource>();
+        openDooreffect.PlayOneShot(openTheDoorClip);
+        isBossDead = false;
     }
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
@@ -33,7 +41,17 @@ public class BossRoomCollider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // When boss get killed, music change to victrory
+        if(boss_ani){
+            if(!boss_ani.GetBool("Alive")){
+                // Debug.LogWarning(isBossDead);
+                isBossDead = true;
+                musicController.ChangeMusicToVictory();
+            }
+        }
+    }
+    public bool getBossState(){
+        return isBossDead;
     }
     /// <summary>
     /// OnTriggerEnter is called when the Collider other enters the trigger.
@@ -47,7 +65,9 @@ public class BossRoomCollider : MonoBehaviour
                 mazeInstance.CreateBoss(sizeX,0);
                 musicController.ChangeMusicToBoomRoom();
                 bossHealthBar.gameObject.SetActive(true);
+                bossInstance = GameObject.Find("Boss(clone)");
+                boss_ani = bossInstance.GetComponent<Animator>();
             }
-        }
+        } 
     }
 }

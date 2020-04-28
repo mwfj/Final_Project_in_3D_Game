@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public int size=10;
     public Text text;
     public Text guide;
+    public Text VictoryText;
     public DeathCount deathCountPrefab;
     private DeathCount deathCountInstance;
     public BossHealthBar bossHealthBar;
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour
         BeginGame();
         isColliderCreated = false;
         text.color = Color.red;
+        VictoryText.gameObject.SetActive(false);
         guide.text = "Find three switches to escape the dungeon.";
         bossHealthBar.gameObject.SetActive(false);
     }
@@ -65,10 +67,11 @@ public class GameManager : MonoBehaviour
         }
 
         text.text = switchCount + "/ 3 switches remain";
-        if (switchCount >= 3)
+        if (switchCount == 3)
         {
             mazeInstance.OpenDoor();
-            text.text = "The door to the boss room open";
+            guide.text = "Boss Room is opened, find the entry and do what you need to do";
+            // text.text = "The door to the boss room open";
             text.fontSize = 40;
             //text.transform.position = Vector3.zero;
             
@@ -78,6 +81,11 @@ public class GameManager : MonoBehaviour
             isColliderCreated = true;
             Debug.LogWarning(isColliderCreated);
             CreateBossRoomCollider();
+        }
+        if(colliderInstance){
+            if(colliderInstance.getBossState()){
+                VictoryText.gameObject.SetActive(true);
+            }
         }
     }
     // private void CreateTrashes(Switch sw){
@@ -103,9 +111,11 @@ public class GameManager : MonoBehaviour
         playerInstance = Instantiate(playerPrefab) as Player;
         playerInstance.gameObject.name = "unitychan(Clone)";
         musicContollerInstance = Instantiate(musicController) as BackgroundMusicController;
+        
     }
     private void RestartGame()
     {
+        VictoryText.gameObject.SetActive(false);
         Destroy(musicContollerInstance.gameObject);
         // musicController.ChangeToMazeMusic();
         isColliderCreated = false;

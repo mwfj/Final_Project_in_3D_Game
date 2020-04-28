@@ -20,6 +20,7 @@ public class CharacterState :MonoBehaviour
     {
 
     }
+    
     private void Start()
     {
         healthPoint = 100;
@@ -43,8 +44,6 @@ public class CharacterState :MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-
- 
             healthPoint -= damage;
             Debug.Log(transform.gameObject.name + "\t" + healthPoint);
             animator.SetTrigger("GetHit");

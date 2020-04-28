@@ -21,6 +21,9 @@ public class Boss : EmeryBase
     // Update is called once per frame
     void Update()
     {
+        if(!boss_ani.GetBool("Alive")){
+            
+        }
         // Debug.LogWarning(transform.position);
         // Debug.LogWarning("Boss: "+bossAgent.enabled);
         stateInfo = boss_ani.GetCurrentAnimatorStateInfo(0);

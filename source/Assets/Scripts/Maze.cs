@@ -26,7 +26,7 @@ public class Maze : MonoBehaviour
     //Boss Related
     public Boss bossPrefab;
     public bool bossCreated= false;
-    private Boss bossInstace;
+    public Boss bossInstace;
     private Collider bossRoomCollider;
     //Mark whether boss room is opened
     private bool isDoorOpen;

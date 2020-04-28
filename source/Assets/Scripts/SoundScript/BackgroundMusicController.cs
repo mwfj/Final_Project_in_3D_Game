@@ -33,11 +33,11 @@ public class BackgroundMusicController : MonoBehaviour
         main_audio.loop = true;
         main_audio.Play();
     }
-    public void ChangeMusicToVicotry(){
+    public void ChangeMusicToVictory(){
         main_audio.Stop();
         main_audio.clip = victory_music;
         main_audio.volume = 0.65f;
-        main_audio.loop = true;
+        main_audio.loop = false;
         main_audio.Play();
     }
     // Update is called once per frame
