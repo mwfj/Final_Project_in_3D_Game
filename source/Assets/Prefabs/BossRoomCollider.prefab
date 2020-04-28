@@ -58,4 +58,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isBossCreated: 0
-  gameManager: {fileID: 0}
+  musicController: {fileID: 1302854286138042965, guid: 9d00c802605a24fc1acc10ff9f936d43,
+    type: 3}

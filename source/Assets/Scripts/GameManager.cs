@@ -18,6 +18,13 @@ public class GameManager : MonoBehaviour
     public Text guide;
     public DeathCount deathCountPrefab;
     private DeathCount deathCountInstance;
+    public BossHealthBar bossHealthBar;
+
+    public BackgroundMusicController musicController;
+
+    private BackgroundMusicController musicContollerInstance;
+
+
 
     
     // The Collider will store in this parameter for detect whether main character is in the boss room
@@ -29,7 +36,8 @@ public class GameManager : MonoBehaviour
         BeginGame();
         isColliderCreated = false;
         text.color = Color.red;
-        guide.text = "Use wasd to move, right button on mouse to rotate. Find three switches to escape the dungeon.";
+        guide.text = "Find three switches to escape the dungeon.";
+        bossHealthBar.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -94,10 +102,12 @@ public class GameManager : MonoBehaviour
         mazeInstance.Generate();
         playerInstance = Instantiate(playerPrefab) as Player;
         playerInstance.gameObject.name = "unitychan(Clone)";
-
+        musicContollerInstance = Instantiate(musicController) as BackgroundMusicController;
     }
     private void RestartGame()
     {
+        Destroy(musicContollerInstance.gameObject);
+        // musicController.ChangeToMazeMusic();
         isColliderCreated = false;
         StopAllCoroutines();
         if(colliderInstance){
@@ -118,7 +128,7 @@ public class GameManager : MonoBehaviour
         colliderInstance = Instantiate(bossRoomColliderPrefab) as BossRoomCollider;
         colliderInstance.gameObject.name = "BossRoomCollider(clone)";
         colliderInstance.transform.position = new Vector3(size/2,0.5f,0.5f);
-        colliderInstance.Initialization(size,size,mazeInstance);
+        colliderInstance.Initialization(size,size,mazeInstance,musicContollerInstance);
         bossRoomCollider = colliderInstance.GetComponent<BoxCollider>();
         bossRoomCollider.isTrigger = true;
         // isColliderCreated = true;

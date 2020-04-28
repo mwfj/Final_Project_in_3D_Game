@@ -824,7 +824,31 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0
+        functionName: CharacterWalkSound
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 7681537e7228f43a090c9e00fe766d2b,
+          type: 3}
+        floatParameter: 1
+        intParameter: 0
+        messageOptions: 0
+      - time: 0
+        functionName: CharacterWalkSound
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 7681537e7228f43a090c9e00fe766d2b,
+          type: 3}
+        floatParameter: 1
+        intParameter: 0
+        messageOptions: 0
+      - time: 0
+        functionName: CharacterWalkSound
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 7681537e7228f43a090c9e00fe766d2b,
+          type: 3}
+        floatParameter: 1
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1

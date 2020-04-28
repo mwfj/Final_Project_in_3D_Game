@@ -7,10 +7,17 @@ public class BossRoomCollider : MonoBehaviour
     public bool isBossCreated;
     private Maze mazeInstance;
     private int sizeX,sizeZ;
-    public void Initialization(int x_axis,int z_axis, Maze maze){
+    public BackgroundMusicController musicController;
+    private BossHealthBar bossHealthBar;
+    private GameManager gameManager;
+
+
+
+    public void Initialization(int x_axis,int z_axis, Maze maze, BackgroundMusicController _musicController){
         sizeZ = z_axis;
         sizeX = x_axis;
         mazeInstance = maze;
+        musicController = _musicController;
     }
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
@@ -19,6 +26,9 @@ public class BossRoomCollider : MonoBehaviour
     void Start()
     {
         isBossCreated = false;
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        bossHealthBar = gameManager.bossHealthBar;
+        
     }
     // Update is called once per frame
     void Update()
@@ -35,6 +45,8 @@ public class BossRoomCollider : MonoBehaviour
             if(other.CompareTag("Player")){
                 isBossCreated = true;
                 mazeInstance.CreateBoss(sizeX,0);
+                musicController.ChangeMusicToBoomRoom();
+                bossHealthBar.gameObject.SetActive(true);
             }
         }
     }
