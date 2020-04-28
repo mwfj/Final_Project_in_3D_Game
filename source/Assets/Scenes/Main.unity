@@ -180,7 +180,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 21
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
@@ -386,7 +386,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: -0.000024006877, z: 4.5817e-41, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -563,7 +563,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 205, y: -121.5}
+  m_AnchoredPosition: {x: 294, y: -169}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1177128595
@@ -601,7 +601,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 22
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -614,7 +614,8 @@ MonoBehaviour:
     m_LineSpacing: 1.2
   m_Text: "A/D for Horizontal Move\r\nW/S for Vertical Move\r\n\rMouse Left Button
     for Attack(click/Hold)\r\n\rHold mouse right button to change direction\r\n\rSpace
-    to jump\nDrag Right mouse key to rotate\nEscape to quit the Game\r\n"
+    to jump\nDrag Right mouse key to rotate\nPress F to turn on the switch\nPress
+    LeftShift to move down the Camera Angle/resume\nEscape to quit the Game\r\n"
 --- !u!222 &1177128597
 CanvasRenderer:
   m_ObjectHideFlags: 0

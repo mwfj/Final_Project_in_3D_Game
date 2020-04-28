@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
         isColliderCreated = false;
         text.color = Color.red;
         VictoryText.gameObject.SetActive(false);
-        guide.text = "Find three switches to escape the dungeon.";
+        guide.text = "Find and turn on three switches to escape the dungeon.";
         bossHealthBar.gameObject.SetActive(false);
     }
 

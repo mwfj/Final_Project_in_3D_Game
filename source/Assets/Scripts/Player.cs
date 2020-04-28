@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
     bool grounded = true;
     private float tempTime = 0f;
 
-
+    public float rotationAngle = 15.0f; // Camera angle rotation per frame
 
     public float jumpUpTime = 0.5f;
     private bool isJumpingUp = false;
@@ -236,7 +236,7 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse1))
         {
             float mouseX = Input.GetAxis("Mouse X") * rotateSpeed * Time.deltaTime;
-            playerCam.transform.RotateAround(this.transform.position, Vector3.up, mouseX);
+            playerCam.transform.RotateAround(this.transform.position, Vector3.up, mouseX*30*Time.deltaTime);
         }
 
         // if(Input.GetAxis("Mouse ScrollWheel")!=0){
