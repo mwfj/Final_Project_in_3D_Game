@@ -386,7 +386,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 3.379e-42, y: 1.01e-43, z: 2.3877232e-38, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -612,10 +612,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "A/D for Horizontal Move\r\nW/S for Vertical Move\r\n\rMouse Left Button
-    for Attack(click/Hold)\r\n\rHold mouse right button to change direction\r\n\rSpace
-    to jump\nDrag Right mouse key to rotate\nPress F to turn on the switch\nPress
-    LeftShift to move down the Camera Angle/resume\nEscape to quit the Game\r\n"
+  m_Text: "W/A/S/D to move forward/back/left/right\n\rMouse Left Button for Attack(click/Hold)\r\n\rHold
+    mouse right button to change direction\r\nRoll the mouse wheel to adjust the
+    angle of view\n\rSpace to jump\nDrag Right mouse key to rotate\nPress F to turn
+    on the switch\nPress LeftShift to move down the Camera Angle/resume\nEscape to
+    quit the Game\r\n"
 --- !u!222 &1177128597
 CanvasRenderer:
   m_ObjectHideFlags: 0
