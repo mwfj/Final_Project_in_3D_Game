@@ -77,3 +77,30 @@ In 04/09 updates we add a random maze and a boss room.  But currently no boss in
 + Change Trash Prefabs's setting
 
 > ![04_25-update_Trash_Prefab_Setting](pic/04_25-update_Trash_Prefab_Setting.png)
+
+##(04/26/2020) Add Boss Creation and animation; Add trash/boss Health bar 
+### Boss Creation
+The boss creation is little complicated, when the main character turn all the switch on(3 in this game), boss room will open, and the location of door will automatically create a box collider to detect whether the main character enter the boss room or not. When the main character first enter the boss room, it will trigger this collider and boss will generate in the boss room.
+### Health bar 
+Add world space canvas to the enemy prefab, and change the fill account by the health point of the enemy.
+
+If health equals 0, play the dying animation and destroy the object after the animation.
+
+And the boss health bar will use the camera space, and is located at the top left of the screen. It will be activated when the boss is generated.
+
+If we just set the canvas as a sub object of the enemy, the health bar will rotate with the enemy. We want it always face to our camera, so we add a script to dynamically detect the rotation and make sure the health bar is perfectly displayed.
+
+##(04/27/2020) Add background music; Add main character/boss sound effect
+
+### Background music
+There has two background sound in the game, when the main character in the maze, the game will play relatively soothing background music.
+
+However, when the main character entered the boss room, the concert became relatively intense in order to give the player a sense of tension.
+
+Moreover, when boss room opened, it will have sound effect to describe it.
+
+When the main character kill boss, the background music will change to victory music.
+
+### Character/Boss sound effect
+Because the time limit, I only added sound effects for the main character and boss. When player run, attack and jump, it will have sound effect. When boss roar(introduce animation) and attack, it will have sound effect. We will add sound effect for all character in the future.
+
