@@ -66,7 +66,7 @@ In 04/09 updates we add a random maze and a boss room.  But currently no boss in
 > ![2020-4-23_update_prefab](pic/2020-4-23_update_prefab.png)
 > ![2020-4-23_update_scripts](pic/2020-4-23_update_scripts.png)
 
-##  (04/25/2020)  Add mobs/trashed animation
+##  (04/25/2020)  **Add mobs/trashed animation**
 
 + Now trash can walk to main character
 + When trash apporach to main chatacter, it will stop and trigger attack animation
@@ -78,7 +78,7 @@ In 04/09 updates we add a random maze and a boss room.  But currently no boss in
 
 > ![04_25-update_Trash_Prefab_Setting](pic/04_25-update_Trash_Prefab_Setting.png)
 
-## (04/26/2020) Add Boss Creation and animation; Add trash/boss Health bar  and Attack system
+## (04/26/2020)  **Add Boss Creation and animation; Add trash/boss Health bar  and Attack system**
 ### Boss Creation
 The boss creation is little complicated, when the main character turn all the switch on(3 in this game), boss room will open, and the location of door will automatically create a box collider to detect whether the main character enter the boss room or not. When the main character first enter the boss room, it will trigger this collider and boss will generate in the boss room.
 ### Health bar 
@@ -102,7 +102,7 @@ Add collision trigger on the weapon. Using onTriggerStay to check the attack the
 
 We should add additional box collider to check the attack. Because of the NaveMesh, some times the Weapon may not really attack on the enemy model, so a little bigger hit box should be added. This will improve the use experience.
 
-## (04/27/2020) Add background music; Add main character/boss sound effect
+## (04/27/2020)  **Add background music; Add main character/boss sound effect**
 
 ### Background music
 There has two background sound in the game, when the main character in the maze, the game will play relatively soothing background music.
