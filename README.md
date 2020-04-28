@@ -21,6 +21,9 @@ For our lastest update, see this link: [update](https://mwfj.github.io/Final_Pro
 > Screenshot for our SecondPlayable Version
 ![screen_shot_spv](update/pic/new_texture_preview.png)
 
+>Navmesh and maze dynamically_generation demo
+![navmesh_maze_dynamically_generation](readme_img/navmesh_maze_dynamically_generation.gif)
+
 > Fight System<br>
 ![Fight_System](readme_img/Attack_system.gif)
 
