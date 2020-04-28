@@ -78,7 +78,7 @@ In 04/09 updates we add a random maze and a boss room.  But currently no boss in
 
 > ![04_25-update_Trash_Prefab_Setting](pic/04_25-update_Trash_Prefab_Setting.png)
 
-##(04/26/2020) Add Boss Creation and animation; Add trash/boss Health bar 
+## (04/26/2020) Add Boss Creation and animation; Add trash/boss Health bar 
 ### Boss Creation
 The boss creation is little complicated, when the main character turn all the switch on(3 in this game), boss room will open, and the location of door will automatically create a box collider to detect whether the main character enter the boss room or not. When the main character first enter the boss room, it will trigger this collider and boss will generate in the boss room.
 ### Health bar 
@@ -90,7 +90,7 @@ And the boss health bar will use the camera space, and is located at the top lef
 
 If we just set the canvas as a sub object of the enemy, the health bar will rotate with the enemy. We want it always face to our camera, so we add a script to dynamically detect the rotation and make sure the health bar is perfectly displayed.
 
-##(04/27/2020) Add background music; Add main character/boss sound effect
+## (04/27/2020) Add background music; Add main character/boss sound effect
 
 ### Background music
 There has two background sound in the game, when the main character in the maze, the game will play relatively soothing background music.
