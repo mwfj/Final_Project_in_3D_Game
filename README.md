@@ -51,6 +51,10 @@ For our lastest update, see this link: [update](https://mwfj.github.io/Final_Pro
 
 6. Escape to quit the Game
 
+7.  LeftShift to move down/resume the camera angle
+
+8. Press F to turn on the switch
+
 
 ## Game Mechanics
 
