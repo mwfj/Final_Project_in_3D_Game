@@ -43,6 +43,8 @@ In 04/09 updates we add a random maze and a boss room.  But currently no boss in
 =======
 ## (04/23/2020)  **Add Runtime Navmesh Baker and Agent**
 
+![navmesh_maze_dynamically_generation](../readme_img/navmesh_maze_dynamically_generation.gif)
+
 [Repo_of_Runtime_NavMesh](https://github.com/Unity-Technologies/NavMeshComponents)
 
 + Now, our game can dynamically bake Nav Mesh.
