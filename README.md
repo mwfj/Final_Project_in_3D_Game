@@ -1,6 +1,6 @@
 # Final Project in CPSC 6820-3D Game Programming
 ### Team Name: Refulgence
-### Team Member: Zhongyue Ren, Wufangjie Ma
+### Team Member: [Zhongyue Ren](https://github.com/zhongyr),  [Wufangjie Ma](https://github.com/mwfj)
 
 ### Our website
 [website](https://mwfj.github.io/Final_Project_in_3D_Game/ "website")
