@@ -58,6 +58,8 @@ For our lastest update, see this link: [update](https://mwfj.github.io/Final_Pro
 
 8. Press F to turn on the switch
 
+9. Scroll the mouse wheel to change the field of view
+
 
 ## Game Mechanics
 
@@ -82,9 +84,7 @@ When the boss die, game over.
 
 3. Jump animation(Scripts/WGS Jump)
 
-   Its difficult to synchronize the movement of the character with the
-   animation. The change from jump up animation to jump down should test
-   a lot for the best performance.
+   Its difficult to synchronize the movement of the character with the  animation. The change from jump up animation to jump down should test   a lot for the best performance.
 
 4. Dying animation
 
