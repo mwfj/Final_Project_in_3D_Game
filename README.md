@@ -8,7 +8,8 @@
 For our lastest update, see this link: [update](https://mwfj.github.io/Final_Project_in_3D_Game/update "update")
 
 ## Our Final playable versioin:
-[Game Instruction](https://mwfj.github.io/Final_Project_in_3D_Game/First_Playable_version/README.md)<br>
+
+### Please scroll down the page to view the control information and game mechanics
 
 [Final Playable version](http://wufangm.people.clemson.edu/Final_playable_version/index.html)
 
