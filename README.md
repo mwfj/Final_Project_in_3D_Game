@@ -75,16 +75,16 @@ When the boss die, game over.
 ## Animation Control
 
 
-1. Blend Tree for different direction running(Scripts/WGS Jump)
+1. Blend Tree for different direction running(Animation/PlayerAnimationController)
 
-2. Different attack stage different animation(Scripts/WGS Jump)
+2. Different attack stage different animation(Animation/PlayerAnimationController)
 
    Use trigger condition to change the phase of attack animation. Using
    a cooldown to make sure the animation will not be interrupted. Also
    use onStateEnter and onStateExit to change the parameter isAttacking,
    which is related to the damage count.
 
-3. Jump animation(Scripts/WGS Jump)
+3. Jump animation(Animation/PlayerAnimationController)
 
    Its difficult to synchronize the movement of the character with the  animation. The change from jump up animation to jump down should test   a lot for the best performance.
 
@@ -94,7 +94,7 @@ When the boss die, game over.
    which will be updated by the Character Stats scripts. Use onStateExit
    () event to destroy the dead object.
 
-5. For Trash/Boss, we use animation transition to control different animation(idle, walk, getHit and attack; locate at Scripts/TrashAnimationController)
+5. For Trash/Boss, we use animation transition to control different animation(idle, walk, getHit and attack; locate at  Trash: Animation/TrashAnimationController 	Boss: Animation/BossAnimationController)
    Both trash and boss we use StateMachineBehavior Script(dyingBehavior) to achieve the dying effect
 
 
