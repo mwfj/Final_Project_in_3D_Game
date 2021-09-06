@@ -2,7 +2,7 @@
 ### Team Name: Refulgence
 ### Team Member: [Zhongyue Ren](https://github.com/zhongyr),  [Wufangjie Ma](https://github.com/mwfj)
 
-### Our website
+### Our website:
 [website](https://mwfj.github.io/Final_Project_in_3D_Game/ "website")
 
 For our lastest update, see this link: [update](https://mwfj.github.io/Final_Project_in_3D_Game/update "update")
