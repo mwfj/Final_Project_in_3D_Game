@@ -23,10 +23,10 @@ You can find the unitypackage in [here](https://drive.google.com/file/d/1E-SrQDX
 Video Demo: https://drive.google.com/file/d/12-4LReisw6tiSoZFlJ_Y-dx6W6bKyRKv/view?usp=sharing
 
 > Screenshot for our First Playable Version
-> ![screen_shot_fpv](/Users/mwfj/Desktop/Final_Project/readme_img/fpv_screenshot.png)
+> ![screen_shot_fpv](./readme_img/fpv_screenshot.png)
 
 > Screenshot for our SecondPlayable Version
-> ![screen_shot_spv](/Users/mwfj/Desktop/Final_Project/update/pic/new_texture_preview.png)
+> ![screen_shot_spv](./update/pic/new_texture_preview.png)
 
 >Navmesh and maze dynamically_generation demo
 >![navmesh_maze_dynamically_generation](./readme_img/navmesh_maze_dynamically_generation.gif)
