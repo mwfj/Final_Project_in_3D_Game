@@ -29,13 +29,13 @@ Video Demo: https://drive.google.com/file/d/12-4LReisw6tiSoZFlJ_Y-dx6W6bKyRKv/vi
 > ![screen_shot_spv](/Users/mwfj/Desktop/Final_Project/update/pic/new_texture_preview.png)
 
 >Navmesh and maze dynamically_generation demo
->![navmesh_maze_dynamically_generation](/Users/mwfj/Desktop/Final_Project/readme_img/navmesh_maze_dynamically_generation.gif)
+>![navmesh_maze_dynamically_generation](./readme_img/navmesh_maze_dynamically_generation.gif)
 
 > Fight System<br>
-> ![Fight_System](/Users/mwfj/Desktop/Final_Project/readme_img/Attack_system.gif)
+> ![Fight_System](./readme_img/Attack_system.gif)
 
 > Boss Room <br>
-> ![Boss_Room](/Users/mwfj/Desktop/Final_Project/readme_img/Boss_Room.gif)
+> ![Boss_Room](./readme_img/Boss_Room.gif)
 
 ## Import Assert
 
@@ -43,8 +43,8 @@ Video Demo: https://drive.google.com/file/d/12-4LReisw6tiSoZFlJ_Y-dx6W6bKyRKv/vi
 
 ### Then if you want to make runtime agnet work, plase manually change the NavMesh Agent setting and NavMesh Bake setting in the "Navigation" Window(Figure below)
 
->![Configure_navmash_agent](/Users/mwfj/Desktop/Final_Project/update/pic/Configure_navmash_agent.png)
->![Configure_navmesh_bake](/Users/mwfj/Desktop/Final_Project/update/pic/Configure_navmesh_bake.png)
+>![Configure_navmash_agent](./update/pic/Configure_navmash_agent.png)
+>![Configure_navmesh_bake](./update/pic/Configure_navmesh_bake.png)
 
 ### *More functional update please see the update page*
 
