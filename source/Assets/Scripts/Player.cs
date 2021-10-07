@@ -31,15 +31,15 @@ public class Player : MonoBehaviour
     bool isHit;
     // Sign the layer for collision, where collision layer is Wall in this game.
     public LayerMask collisionLayer;
+    public CharacterState mCharacterState;
     public float gravity = 0.5f;
     public float jumpSpeed = 5f;
-    public float moveSpeed = 1.0f;
     private Vector3 moveDirection = Vector3.zero;
     Animator animator;
     bool grounded = true;
     private float tempTime = 0f;
 
-    public float rotationAngle = 15.0f; // Camera angle rotation per frame
+
 
     public float jumpUpTime = 0.5f;
     private bool isJumpingUp = false;
@@ -57,6 +57,7 @@ public class Player : MonoBehaviour
         normal_distance = Vector3.Distance(this.transform.position, playerCam.transform.position);
         isLookUp = false;
         isHit = false;
+        mCharacterState = new CharacterState(this);
 
     }
     private void OnEnable()
@@ -104,32 +105,18 @@ public class Player : MonoBehaviour
         float sr = Mathf.Sin(cameraRoate);
         float cr = Mathf.Cos(cameraRoate);
 
-        if (v != 0 || h != 0)
-        {
-            animator.SetBool("Running", true);
-            animator.SetFloat("x", h);
-            animator.SetFloat("y", v);
-        }
-        else
-        {
-            animator.SetBool("Running", false);
-        }
-        moveDirection = new Vector3((v * sr + h * cr)*moveSpeed, 0, (v * cr - h * sr)*moveSpeed);
+        moveDirection = new Vector3((v * sr + h * cr), 0, (v * cr - h * sr));
         if (grounded)
         {
-            AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(0);
-            if (Input.GetButtonDown("Jump"))
+            if (Input.GetButtonDown("Jump")&&animator.GetCurrentAnimatorStateInfo(0).IsName("Stand@loop 2 0 0"))
             {
-                if (info.IsName("Stand@loop 2 0 0") || info.IsName("Running")){
-                    grounded = false;
-                    animator.SetBool("Jump", true);
-                    animator.SetBool("Running", false);
-                    animator.SetBool("Grounded", false);
-                    Debug.Log("set Grounded false");
-                    isJumpingUp = true;
-                    tempTime = Time.time;
-                    moveDirection.y = jumpSpeed;
-                }
+                grounded = false;
+                animator.SetBool("Jump", true);
+                animator.SetBool("Grounded", false);
+                Debug.Log("set Grounded false");
+                isJumpingUp = true;
+                tempTime = Time.time;
+                moveDirection.y = jumpSpeed;
             }
         }
         else
@@ -164,22 +151,17 @@ public class Player : MonoBehaviour
                 }
             }*/
         }
-        Vector3 direction;
-        if (v < 0)
-        {
-            //moveDirection.x = -moveDirection.x;
-            direction = -playerCam.transform.forward;
-            direction.y = 0;
-        }
-        else
-        {
-            direction = playerCam.transform.forward;
-            direction.y = 0;
-        }
-        m_ch.Move(moveDirection * Time.deltaTime);
  
+        m_ch.Move(moveDirection * Time.deltaTime);
+        Vector3 direction = playerCam.transform.forward;
+        direction.y = 0;
         this.transform.forward = direction;
  
+        
+        // if (Input.GetKeyDown(KeyCode.Space))
+        // {
+
+        // }
 
 
     }
@@ -236,7 +218,7 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse1))
         {
             float mouseX = Input.GetAxis("Mouse X") * rotateSpeed * Time.deltaTime;
-            playerCam.transform.RotateAround(this.transform.position, Vector3.up, mouseX*30*Time.deltaTime);
+            playerCam.transform.RotateAround(this.transform.position, Vector3.up, mouseX);
         }
 
         // if(Input.GetAxis("Mouse ScrollWheel")!=0){

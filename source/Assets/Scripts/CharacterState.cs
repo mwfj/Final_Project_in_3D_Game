@@ -8,49 +8,50 @@ public class CharacterState :MonoBehaviour
     // Their transite functions
     // Basic states
     private int healthPoint; // can not be changed directly
-    private Hashtable enhancements; //buff 
-    private Hashtable enfeeblements;//debuff
-    private BasicState basic;
-    private Animator animator;
-    public void AddEnhacement(Buff _buff)
-    {
+    public Hashtable enhancements; //buff 
+    public Hashtable enfeeblements;//debuff
+    public BasicState basic;
+    public Player playerInstance;
 
-    }
-    public void AddEnfeeblement(Buff _buff)
-    {
-
-    }
-    
-    private void Start()
+    public CharacterState(Player player) // constructor, initialize the basic value of character stat.
     {
         healthPoint = 100;
         basic = BasicState.ALIVE;
-        Debug.Log(transform.gameObject.name + "Health point:\t" + healthPoint);
+        playerInstance = player;
     }
-    private void OnEnable()
+
+    public void AddEnhacement(Buff _buff)
     {
-        animator = GetComponent<Animator>();
-        animator.SetBool("Alive", true);
-    }
-    private void Update()
-    {
-        // API to deal with the health point.
-        if (healthPoint <= 0 )
+        string buffName = _buff.buffName;
+        if (enhancements.ContainsKey(buffName)) // If buff exists, refresh the local buff
         {
-            basic = BasicState.DIE;
-            animator.SetBool("Alive", false);
+            Buff localBuff = (Buff)enhancements[buffName];
         }
+        enhancements.Add(buffName,_buff);
+    }
+    public void AddEnfeeblement(Buff _buff)
+    {
+        string buffName = _buff.buffName;
+        if (enfeeblements.ContainsKey(buffName)) // If buff exists, refresh the local buff
+        {
+            Buff localBuff = (Buff)enfeeblements[buffName];
+        }
+        Debug.Log("ADD debuff\n");
+        enfeeblements.Add(buffName, _buff);
+        _buff.gameObject.transform.parent = this.transform;
+        _buff.playerInstance = this.playerInstance;
     }
 
     public void TakeDamage(int damage)
     {
+        // API to deal with the health point.
+        if (healthPoint < damage)
+        {
+            basic = BasicState.DIE;
+        }
+        else
+        {
             healthPoint -= damage;
-            Debug.Log(transform.gameObject.name + "\t" + healthPoint);
-            animator.SetTrigger("GetHit");
-    }
-
-    public float getHealthRate()
-    {
-        return (float)healthPoint / 100f;
+        }
     }
 }

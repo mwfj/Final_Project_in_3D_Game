@@ -15,7 +15,6 @@ public class Maze : MonoBehaviour
     public BakeNavMesh bakeNavMesh;
     BakeNavMesh bake;
     private MazeCell[,] cells;
-    private static int trashCount=0; 
 
     // A List to store different types of trashes.
     public List<Trash> trash_type_list;
@@ -23,16 +22,7 @@ public class Maze : MonoBehaviour
     public List<Trash> trash_instance_list;
 
     private List<Switch> switch_pos_list = new List<Switch>();
-    //Boss Related
-    public Boss bossPrefab;
-    public bool bossCreated= false;
-    public Boss bossInstace;
-    private Collider bossRoomCollider;
-    //Mark whether boss room is opened
-    private bool isDoorOpen;
-    public bool GetIsDoorOpen(){
-        return isDoorOpen;
-    }
+    public NavMeshSurface surface;
     public Cordinate RandomCordinate 
     {
         // generate random cordinate to set the maze cell
@@ -48,7 +38,6 @@ public class Maze : MonoBehaviour
     }
     void Start()
     {
-        isDoorOpen = false;
     }
 
     // Update is called once per frame
@@ -76,17 +65,16 @@ public class Maze : MonoBehaviour
         {
             DoNextGenerationStep(activeCells);
         }
+        CreateRoom();
         CreateSwitch(3);
         // Debug.LogWarning("Capacity:"+trash_instance_list.Capacity);
         //Create Bake instance
         bake = Instantiate(bakeNavMesh) as BakeNavMesh;
         bake.Initialize();
-        if(!bossCreated){
-            bossCreated = true;
+        // The position of Trash/Mob is based on the position of switch
+        foreach(Switch sw in switch_pos_list){
+            CreateTrashes(sw);
         }
-        CreateRoom();
-        // CreateBoss(sizeX,0);
-        
     }
     // Get all switch instance for get its position
     public List<Switch> getSwitchInstance(){
@@ -100,8 +88,6 @@ public class Maze : MonoBehaviour
         int randSeed = Random.Range(0,3);
         Trash m_trash = Instantiate(trash_type_list[ randSeed ]) as Trash;
         m_trash.transform.position = m_switch.transform.position;
-        trashCount++;
-        m_trash.gameObject.name = "trash" + trashCount;
         // Create mobs/trashes near the switch
         // Vector3 sw_pos = m_switch.transform.position;
         // if(sw_pos.x>-sizeX || sw_pos.x<sizeX){
@@ -118,9 +104,7 @@ public class Maze : MonoBehaviour
 
     public void DestoryTrash(){
         foreach(Trash trash in trash_instance_list){
-            if(trash){
-                Destroy(trash.gameObject);
-            }
+            Destroy(trash.gameObject);
         }
         
     }
@@ -218,10 +202,6 @@ public class Maze : MonoBehaviour
             switch_pos_list.Add(m_switch);
             // CreateTrashes(m_switch);
         }
-        // The position of Trash/Mob is based on the position of switch
-        foreach(Switch sw in switch_pos_list){
-            CreateTrashes(sw);
-        }
     }
     public void CreateRoom()
     {
@@ -280,32 +260,11 @@ public class Maze : MonoBehaviour
             cell = GetCell(cor);
             CreateWall(cell, null, MazeDirection.East);
         }
-        // CreateBoss(sizeX,0);
-
-    }
-    public void CreateBoss(int x_axis, int z_axis){
-        // Cordinate boss_cor = new Cordinate(sizeZ/2,sizeX/2);
-        Debug.LogWarning("Boss Created");
-        Vector3 boss_pos = new Vector3(x_axis,0,z_axis);
-        // public Quaternion b = new Quaternion(0,0,0,0);
-        bossInstace = Instantiate(bossPrefab) as Boss;
-        bossInstace.gameObject.name = "Boss(clone)";
-        bossInstace.transform.position = boss_pos;
-        Debug.LogWarning(bossInstace.transform.position);
-        // isBossCreated = true;
-        // BossRoomCollider boss = Instantiate(bossRoomColliderPrefab,boss_pos) as BossRoomCollider;
-    }
-    public void DestroyBoss(){
-        if(bossInstace)
-            Destroy(bossInstace.gameObject);
-        // if(colliderInstance)
-        //     Destroy(colliderInstance.gameObject);
     }
     public void OpenDoor()
     {
         Cordinate cor = new Cordinate(9, 5);
         MazeCell cell = GetCell(cor);
         cell.DeleteEdge(MazeDirection.East);
-        isDoorOpen = true;
     }
 }

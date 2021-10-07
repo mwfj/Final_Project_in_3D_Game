@@ -1,5 +1,4 @@
-﻿
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -8,7 +7,6 @@ using UnityEngine.AI;
 // The mesh is based on Maze prefab
 public class BakeNavMesh : MonoBehaviour
 {
-
     public NavMeshSurface surface;
     // Start is called before the first frame update
     void Start()
@@ -38,4 +36,3 @@ public class BakeNavMesh : MonoBehaviour
         surface.BuildNavMesh();
     }
 }
-

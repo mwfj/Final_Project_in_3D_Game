@@ -2532,13 +2532,9 @@ GameObject:
   - component: {fileID: 8583130372476946205}
   - component: {fileID: 1844052904207346279}
   - component: {fileID: 8524376262388305529}
-  - component: {fileID: 8546390012212752075}
-  - component: {fileID: -7762289166181026282}
   - component: {fileID: -5852363234756663999}
   - component: {fileID: 6696561277002693869}
   - component: {fileID: -6260696342075550111}
-  - component: {fileID: -6996913975643170502}
-  - component: {fileID: 4481882609671990502}
   m_Layer: 8
   m_Name: Set WeaponMasterUnity-chan GreatSword
   m_TagString: Player
@@ -2600,7 +2596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b66b1fe0eeb81742934b56a529f6922, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maze: {fileID: -8382846551116827833, guid: 5ac5382bb8981e94284ef23588f10118, type: 3}
+  maze: {fileID: 5422840731315949325, guid: 5ac5382bb8981e94284ef23588f10118, type: 3}
   playerCam: {fileID: 0}
   mainCam: {fileID: 0}
   minFov: 30
@@ -2609,35 +2605,11 @@ MonoBehaviour:
   collisionLayer:
     serializedVersion: 2
     m_Bits: 256
+  mCharacterState: {fileID: 0}
   gravity: 0.5
   jumpSpeed: 3.5
-  moveSpeed: 1.2
   jumpUpTime: 1
   jumpBound: 0.2
---- !u!114 &8546390012212752075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4703515313483560206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dce59a53bb435974faf2587b75e3fa0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-7762289166181026282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4703515313483560206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1dca493d79e2c4081bb263f06e78e788, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &-5852363234756663999
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2685,118 +2657,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.8, z: 0}
---- !u!82 &-6996913975643170502
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4703515313483560206}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &4481882609671990502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4703515313483560206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7681537e7228f43a090c9e00fe766d2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  c_walk: {fileID: 8300000, guid: 43a66c8beeab342bca260b4f02b031bd, type: 3}
-  c_jump: {fileID: 8300000, guid: 9d575aebf09594f7580be5ea73e2f4f9, type: 3}
-  c_attack1: {fileID: 8300000, guid: 93f50426e7970479da80e7aeebc5879e, type: 3}
-  c_attack5: {fileID: 8300000, guid: efd9728523a6c4a1f8b56028a0a5a8d2, type: 3}
 --- !u!1 &4715043705993585102
 GameObject:
   m_ObjectHideFlags: 0
@@ -4145,8 +4005,6 @@ GameObject:
   - component: {fileID: 1065651833859435152}
   - component: {fileID: 2986014522649120424}
   - component: {fileID: 5465671404050790235}
-  - component: {fileID: 2864760583545256013}
-  - component: {fileID: 5524298833003587477}
   m_Layer: 8
   m_Name: Mesh_greatsword
   m_TagString: Untagged
@@ -4216,35 +4074,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &2864760583545256013
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8094906911863805720}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3668237748712508287, guid: 44174fe624936d249a651b06e29730a9, type: 3}
---- !u!114 &5524298833003587477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8094906911863805720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc7dd8775295be44fbb1a44dcd39331d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isAttack: 0
-  coolDown: 0.15
-  damage: 10
 --- !u!1 &8198137721379034868
 GameObject:
   m_ObjectHideFlags: 0

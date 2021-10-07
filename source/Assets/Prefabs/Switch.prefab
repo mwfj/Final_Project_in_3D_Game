@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3458454081449912886}
   - component: {fileID: 9194107493351984325}
   - component: {fileID: 6344413819171745836}
+  - component: {fileID: 2353143690811858380}
   - component: {fileID: 114588323447190444}
   m_Layer: 0
   m_Name: Switch
@@ -55,7 +56,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -67,7 +67,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -80,6 +79,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!136 &2353143690811858380
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7577404474226988247}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &114588323447190444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e83dcf7c600304ca831233fc21ade5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game: {fileID: 0}
-  unitychan: {fileID: 8524376262388305529, guid: 3947547f42a4bc748b68430c2937b3db,
+  game: {fileID: 4791317694849074928, guid: a39efc79231b80e4c867a6ee0a139b75, type: 3}
+  unitychan: {fileID: 114635649941723990, guid: 96555cccffd7e5a4b8167221ccf3740f,
     type: 3}
   text: {fileID: 0}

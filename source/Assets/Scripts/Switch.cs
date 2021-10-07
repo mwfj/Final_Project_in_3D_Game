@@ -9,7 +9,6 @@ public class Switch : MonoBehaviour
     public GameManager game;
     public Player unitychan;
     public Text text;
-    private bool isActivate = false;
 
 
     public void Start()
@@ -31,20 +30,14 @@ public class Switch : MonoBehaviour
         // Press F to open the switch
         if (Input.GetKeyDown(KeyCode.F))
         {
-            unitychan = GameObject.Find("unitychan(Clone)").GetComponent<Player>();
-            if(unitychan){
-                
-                // if (Vector3.Distance(this.transform.position, unitychan.transform.position) < 0.5) // this line is for debugging
-                if (Vector3.Distance(this.transform.position, unitychan.transform.position) < 0.5 && (!isActivate))
-                {
-                    this.GetComponent<Renderer>().material.color = Color.green;
-                    game.switchCount++;
-                    isActivate = true;
-                }
-                else
-                {
-                    text.text = "\n Too far from the object";
-                }
+            if (Vector3.Distance(this.transform.position, unitychan.transform.position) < 0.5)
+            {
+                this.GetComponent<Renderer>().material.color = Color.green;
+                game.switchCount++;
+            }
+            else
+            {
+                text.text = "\n Too far from the object";
             }
         }
     }
