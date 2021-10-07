@@ -26,7 +26,7 @@ In 04/09 updates we add a random maze and a boss room.  But currently no boss in
 
 +  Set collision layer in Player.cs to "wall" in Unity Engine<br>
  ![set_collision_layer](pic/set_collision_layer.png)
- 
+
 + Change scene name to "Main"
 
 + Add Character Buff Utility
@@ -124,3 +124,6 @@ When the main character kill boss, the background music will change to victory m
 ### Character/Boss sound effect
 Because the time limit, I only added sound effects for the main character and boss. When player run, attack and jump, it will have sound effect. When boss roar(introduce animation) and attack, it will have sound effect. We will add sound effect for all character in the future.
 
+## (10/07/2021) Move the `unitypackage` to the Google Drive
+
+Link is post on the Readme of the main page.
