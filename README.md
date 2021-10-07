@@ -13,6 +13,8 @@ For our lastest update, see this link: [update](https://mwfj.github.io/Final_Pro
 
 [Final Playable version](http://wufangm.people.clemson.edu/Final_playable_version/index.html)
 
+You can find the unitypackage in [here](https://drive.google.com/file/d/1E-SrQDXDWA9iDxnmv6Z7hdizhzQoUz43/view?usp=sharing)
+
  **Note that: Since our game map is dynamically generated, it will still take some time to generate the game map at the beginning of the game**
 
 Video Demo: https://drive.google.com/file/d/12-4LReisw6tiSoZFlJ_Y-dx6W6bKyRKv/view?usp=sharing
